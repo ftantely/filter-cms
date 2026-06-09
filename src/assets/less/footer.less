@@ -1,0 +1,222 @@
+/*-- -------------------------- -->
+<---           Footer           -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #footer {
+    position: relative;
+    background-color: var(--clr--secondary--300);
+    padding-block: clamp(var(--sp--60), 10vw + 0.00001rem, var(--sp--116));
+    padding-inline: var(--sp--20);
+
+    .container {
+      display: grid;
+      gap: var(--sp--32);
+      grid-template-columns: 1fr;
+      .left-section {
+        .logo {
+          margin-inline-start: (-15/16rem);
+          #svg {
+            width: 120px;
+            height: 120px;
+            margin-block-end: (10/16rem);
+
+            #svg-2 {
+              #path1 {
+                fill: var(--clr--primary--100--constant);
+              }
+            }
+          }
+        }
+
+        p {
+          width: 100%;
+          width: (307/14rem);
+          text-align: left;
+          color: var(--clr--primary--175);
+          font-weight: 400;
+          opacity: 1;
+          margin-block-end: clamp(1.75rem, 3.92vw, 2.5rem);
+        }
+      }
+      .middle-section {
+        .cs-sitemap {
+          color: var(--clr--primary--100--constant);
+          text-transform: uppercase;
+          font-size: var(--fs--16);
+          font-weight: 800;
+          display: block;
+          margin-block-end: var(--sp--16);
+        }
+        .cs-list {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          row-gap: var(--sp--list--gap);
+          width: 100%;
+          text-decoration: none;
+          .cs-li {
+            display: flex;
+            .cs-li-link {
+              position: relative;
+              font-weight: 400;
+              list-style: none;
+              text-decoration-line: none;
+              font-size: (16/16rem);
+              width: 100%;
+              margin-block: 0;
+              color: var(--clr--primary--100--constant);
+              transition:
+                color 0.6s,
+                font-size 0.6s,
+                margin 0.6s;
+            }
+            .cs-li-link:before {
+              flex: none;
+              position: absolute;
+              content: "";
+              opacity: 1;
+              height: (2/16rem);
+              background-color: var(--clr--accent--300);
+              left: 0;
+              bottom: (-4/16rem);
+              width: 0;
+              transition: width 0.6s;
+            }
+            &:hover {
+              .cs-li-link {
+                color: var(--clr--accent--300);
+              }
+              .cs-li-link:before {
+                width: 100%;
+                background-color: var(--clr--accent--300);
+              }
+            }
+          }
+        }
+      }
+      .right-section {
+        .cs-contact {
+          color: var(--clr--primary--100--constant);
+          text-transform: uppercase;
+          font-size: var(--fs--16);
+          font-weight: 800;
+          display: block;
+          margin-block-end: var(--sp--16);
+        }
+        .cs-list {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          row-gap: var(--sp--list--gap);
+          text-decoration: none;
+          .cs-li {
+            display: flex;
+            column-gap: var(--sp--icon--md--gap);
+            .phone,
+            .mail,
+            .map {
+              width: var(--sp--16);
+              height: var(--sp--16);
+              align-self: center;
+            }
+            .phone-link,
+            .email-link,
+            .map-link {
+              position: relative;
+              display: block;
+              font-weight: 400;
+              color: var(--clr--primary--100--constant);
+              list-style: none;
+              text-decoration-line: none;
+              font-size: (16/16rem);
+              width: 100%;
+              align-self: center;
+              transition:
+                color 0.6s,
+                font-size 0.6s,
+                margin 0.6s;
+            }
+            .cs-li-link {
+              align-self: center;
+            }
+            .phone-link:before,
+            .email-link:before {
+              display: block;
+              position: absolute;
+              content: "";
+              opacity: 1;
+              height: (2/16rem);
+              background-color: var(--clr--accent--300);
+              left: 0;
+              bottom: (-4/16rem);
+              width: 0;
+              transition: width 0.6s;
+            }
+            &:hover {
+              .cs-li-link {
+                color: var(--clr--accent--300);
+              }
+              .cs-li-link:before {
+                width: 100%;
+                background-color: var(--clr--accent--300);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .credit {
+      font-size: (16/16rem);
+      line-height: (36/16rem);
+      text-align: center;
+      width: 96%;
+      margin: auto;
+      padding-inline: 16px;
+      margin-top: (100/16rem);
+      color: var(--clr--primary--100--constant);
+
+      a {
+        font-size: (16/16rem);
+        font-weight: 400;
+        text-decoration: none;
+        color: var(--clr--primary--100--constant);
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        font-weight: var(--fw--800);
+        &:hover {
+        }
+      }
+
+      .copyright {
+        font-size: (16/16rem);
+        display: block;
+        color: var(--clr--primary--100--constant);
+      }
+    }
+  }
+}
+
+@media screen and (width >= 768px) {
+  #footer {
+    .container {
+      max-width: 80rem;
+      column-gap: var(--sp--cards--gap--large);
+      grid-template-columns: repeat(3, 1fr);
+      .left-section {
+      }
+      .middle-section {
+        //border: 1px solid blue;
+        display: block;
+        justify-self: center;
+      }
+      .right-section {
+        justify-self: end;
+      }
+    }
+  }
+}

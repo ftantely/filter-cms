@@ -1,0 +1,182 @@
+/*----1023px----*/
+@media only screen and (min-width: 0rem) {
+  #services {
+    background-color: var(--clr--primary--150);
+  }
+  #services .cs-container {
+    margin-inline: auto;
+  }
+  #services .cs-container .cs-content .cs-title,
+  #services .cs-container .cs-content .cs-text {
+    margin-inline: auto;
+    text-align: center;
+  }
+  #services .cs-container .cs-content .cs-text {
+    margin-block-end: var(--sp--comp--related--gap);
+  }
+  #services .cs-container .cs-services .cs-residential {
+    margin-block-end: var(--sp--comp--unrelated--gap);
+  }
+  #services .cs-container .cs-services .cs-residential .cs-subtitle {
+    text-align: center;
+  }
+  #services .cs-container .cs-services .cs-residential .cs-ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: var(--sp--cards--gap--large);
+    justify-items: center;
+  }
+  #services .cs-container .cs-services .cs-residential .cs-ul .cs-item {
+    background-color: var(--clr--primary--100);
+    display: block;
+    padding: var(--sp--cards--padding);
+    border-radius: var(--border--radius--sml);
+    max-width: 24.75rem;
+    border: 1px solid var(--clr--primary--165);
+  }
+  #services .cs-container .cs-services .cs-residential .cs-ul .cs-item .cs-h4 {
+    text-align: center;
+  }
+  #services
+    .cs-container
+    .cs-services
+    .cs-residential
+    .cs-ul
+    .cs-item
+    .cs-text {
+    text-align: center;
+  }
+  #services
+    .cs-container
+    .cs-services
+    .cs-residential
+    .cs-ul
+    .cs-item
+    .cs-cta-container {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-block-end: var(--sp--56);
+  }
+  #services
+    .cs-container
+    .cs-services
+    .cs-residential
+    .cs-ul
+    .cs-item
+    .cs-cta-container
+    .cs-button-solid {
+    min-width: 0;
+    padding: var(--sp--8) var(--sp--16);
+    font-size: 14px;
+    line-height: var(--sp--20);
+  }
+  #services .cs-container .cs-services .cs-residential .cs-ul .cs-item img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--border--radius--lg);
+  }
+  #services .cs-container .cs-services .cs-commercial .cs-subtitle {
+    text-align: center;
+  }
+  #services .cs-container .cs-services .cs-commercial .cs-ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: var(--sp--cards--gap--large);
+    justify-items: center;
+  }
+  #services .cs-container .cs-services .cs-commercial .cs-ul .cs-item {
+    background-color: var(--clr--primary--100);
+    display: block;
+    padding: var(--sp--cards--padding);
+    border-radius: var(--border--radius--sml);
+    max-width: 24.75rem;
+    border: 1px solid var(--clr--primary--165);
+  }
+  #services .cs-container .cs-services .cs-commercial .cs-ul .cs-item .cs-h4 {
+    text-align: center;
+  }
+  #services .cs-container .cs-services .cs-commercial .cs-ul .cs-item .cs-text {
+    text-align: center;
+  }
+  #services
+    .cs-container
+    .cs-services
+    .cs-commercial
+    .cs-ul
+    .cs-item
+    .cs-cta-container {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-block-end: var(--sp--56);
+  }
+  #services
+    .cs-container
+    .cs-services
+    .cs-commercial
+    .cs-ul
+    .cs-item
+    .cs-cta-container
+    .cs-button-solid {
+    min-width: 0;
+    padding: var(--sp--8) var(--sp--16);
+    font-size: 14px;
+    line-height: var(--sp--20);
+  }
+  #services .cs-container .cs-services .cs-commercial .cs-ul .cs-item img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--border--radius--lg);
+  }
+}
+/*----768px----*/
+@media only screen and (min-width: 48rem) {
+  html {
+    scroll-padding-top: 315px;
+  }
+  #services .cs-container .cs-services .cs-residential .cs-ul {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  #services .cs-container .cs-services .cs-residential .cs-ul .cs-item {
+    max-width: 31rem;
+  }
+  #services .cs-container .cs-services .cs-commercial .cs-ul {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  #services .cs-container .cs-services .cs-commercial .cs-ul .cs-item {
+    max-width: 31rem;
+  }
+}
+/*----1024px----*/
+@media only screen and (min-width: 64rem) {
+  html {
+    scroll-padding-top: 315px;
+  }
+  #services .cs-container {
+    margin-inline: auto;
+  }
+  #services .cs-container .cs-services .cs-residential .cs-ul {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  #services .cs-container .cs-services .cs-residential .cs-ul .cs-item {
+    max-width: 31rem;
+  }
+  #services .cs-container .cs-services .cs-commercial .cs-ul {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    max-width: 53.14625rem;
+    margin-inline: auto;
+  }
+  #services .cs-container .cs-services .cs-commercial .cs-ul .cs-item {
+    max-width: 25.33375rem;
+    max-height: 39.45875rem;
+  }
+}

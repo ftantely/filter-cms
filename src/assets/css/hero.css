@@ -1,0 +1,53 @@
+/* <!-- **************************************** -->
+<!--                Mobile Hero               -->
+<!-- **************************************** --> */
+@media only screen and (min-width: 0) {
+  #hero {
+    position: relative;
+    z-index: 2;
+    padding-block: clamp(11.25rem, 23.820001vw, 18.7rem) var(--sp--60);
+    padding-inline: 0;
+    margin-inline: auto;
+    display: block;
+    background-color: var(--clr--secondary--300);
+    z-index: 0;
+  }
+  #hero .cs-container {
+    position: relative;
+    margin-block: var(--margin-top);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-inline: 20px;
+    margin-inline: auto;
+  }
+  #hero .cs-container .cs-flex-group {
+    margin: auto;
+    min-height: 300px;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #hero .cs-container .cs-flex-group .cs-topper {
+    color: var(--clr--primary--100--constant);
+    justify-self: center;
+    text-align: center;
+  }
+  #hero .cs-container .cs-flex-group h1 {
+    color: var(--clr--primary--100--constant);
+    text-align: center;
+    font-size: clamp(2.4375rem, 5.00001vw, 3.8125rem);
+  }
+  #hero .cs-container .cs-flex-group .cs-text {
+    margin-block-end: clamp(1.75rem, 3.92vw, 2.5rem);
+    color: var(--clr--primary--175--constant);
+    text-align: center;
+  }
+  #wave {
+    margin-block: -1px -6px;
+    background: var(--clr--primary--100);
+  }
+}
+/* Dark Mode */

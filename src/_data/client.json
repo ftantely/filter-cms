@@ -1,0 +1,19 @@
+{
+   "title": "Web Designer and Developer",
+    "name": "Utah Web Pros",
+    "pricing": "$0 Down $150 Per Month",
+    "email": "osborne-electric@outlook.com",
+    "phoneForTel": "801-885-4195",
+    "phoneFormatted": "(801) 885-4195",
+    "businessHours": "Mon-Fri 08:00 AM - 05:00PM",
+    "address": {
+        "lineOne": "12749 S Rosberg Dr",
+        "lineTwo": "Second Address Line",
+        "city": "Riverton",
+        "state": "UT",
+        "zip": "84065-6872",
+        "country": "USA",
+        "mapLink": "https://www.google.com/maps/place/12749+S+Rosberg+Dr,+Riverton,+UT+84065/@40.519563,-111.9687499,17z/data=!3m1!4b1!4m6!3m5!1s0x8752843191731553:0xa51028d8eeb6fd24!8m2!3d40.519563!4d-111.9661696!16s%2Fg%2F11c5n38rm0?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D"
+    },
+    "domain": "https://www.utahwebpros.com"
+}

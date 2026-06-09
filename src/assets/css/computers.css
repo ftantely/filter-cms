@@ -1,0 +1,382 @@
+@media only screen and (min-width: 0rem) {
+  .computers-section .filters {
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--sp--li-vert-gap);
+    margin-inline: auto;
+    margin-bottom: var(--sp--comp--related--gap);
+    padding: var(--sp--cards--padding);
+    background-color: var(--clr--primary--150);
+    border-radius: 1.5rem;
+  }
+  .computers-section .filters .all-label {
+    text-transform: uppercase;
+    display: flex;
+    gap: var(--sp--icon--md--gap);
+    font-weight: var(--fw--800);
+    font-size: var(--fs-24);
+    color: var(--clr--secondary--300);
+  }
+  .computers-section .filters .all-label .all-input input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 2px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--clr--secondary--300);
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .computers-section .filters .all-label .all-input input[type="checkbox"]:checked {
+    background-color: var(--clr--secondary--300);
+  }
+  .computers-section .filters .all-label .all-input input[type="checkbox"]:checked::after {
+    content: "";
+    display: block;
+    width: 100%;
+    /* fills the checkbox */
+    height: 100%;
+    /* fills the checkbox */
+    background-image: url("../svgs/check-mark-10118.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .computers-section .filters .filter-by-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+  }
+  .computers-section .filters .filter-by-brand .filter-by-brand-button {
+    border: none;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: var(--fw--800);
+    font-size: var(--fs-24);
+    color: var(--clr--secondary--300);
+    gap: var(--sp--icon--md--gap);
+  }
+  .computers-section .filters .filter-by-brand .filter-by-brand-button .cs-image-container-by-brand {
+    position: relative;
+  }
+  .computers-section .filters .filter-by-brand .filter-by-brand-button .cs-image-container-by-brand img {
+    width: 0.625rem;
+    height: 0.625rem;
+  }
+  .computers-section .filters .filter-by-brand .filter-by-brand-button .cs-image-container-by-brand .down-arrow-brands {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .computers-section .filters .filter-by-brand .filter-by-brand-button .cs-image-container-by-brand .up-arrow-brands {
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+  .computers-section .filters .filter-by-brand .filter-brands {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-left: var(--sp--icon--md--gap);
+    transition: grid-template-rows 0.3s;
+  }
+  .computers-section .filters .filter-by-brand .filter-brands .filter-list {
+    overflow: hidden;
+  }
+  .computers-section .filters .filter-by-brand .filter-brands .filter-list .filter-label {
+    display: flex;
+    justify-content: space-between;
+  }
+  .computers-section .filters .filter-by-brand .filter-brands .filter-list .filter-label .checkbox-filter {
+    display: flex;
+    gap: 0.625rem;
+    align-items: center;
+  }
+  .computers-section .filters .filter-by-brand .filter-brands .filter-list .filter-label .checkbox-filter input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 2px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--clr--secondary--300);
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .computers-section .filters .filter-by-brand .filter-brands .filter-list .filter-label .checkbox-filter input[type="checkbox"]:checked {
+    background-color: var(--clr--secondary--300);
+  }
+  .computers-section .filters .filter-by-brand .filter-brands .filter-list .filter-label .checkbox-filter input[type="checkbox"]:checked::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../svgs/check-mark-10118.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .computers-section .filters .filter-by-type {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+  }
+  .computers-section .filters .filter-by-type .filter-by-type-button {
+    border: none;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: var(--fw--800);
+    font-size: var(--fs-24);
+    color: var(--clr--secondary--300);
+    gap: var(--sp--icon--md--gap);
+  }
+  .computers-section .filters .filter-by-type .filter-by-type-button .cs-image-container-by-type {
+    position: relative;
+  }
+  .computers-section .filters .filter-by-type .filter-by-type-button .cs-image-container-by-type img {
+    width: 0.625rem;
+    height: 0.625rem;
+  }
+  .computers-section .filters .filter-by-type .filter-by-type-button .cs-image-container-by-type .down-arrow-types {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .computers-section .filters .filter-by-type .filter-by-type-button .cs-image-container-by-type .up-arrow-types {
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+  .computers-section .filters .filter-by-type .filter-types {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-left: var(--sp--icon--md--gap);
+    transition: grid-template-rows 0.3s;
+  }
+  .computers-section .filters .filter-by-type .filter-types .filter-list {
+    overflow: hidden;
+  }
+  .computers-section .filters .filter-by-type .filter-types .filter-list .filter-label {
+    display: flex;
+    justify-content: space-between;
+  }
+  .computers-section .filters .filter-by-type .filter-types .filter-list .filter-label .checkbox-filter {
+    display: flex;
+    gap: 0.625rem;
+    align-items: center;
+  }
+  .computers-section .filters .filter-by-type .filter-types .filter-list .filter-label .checkbox-filter input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 2px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--clr--secondary--300);
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .computers-section .filters .filter-by-type .filter-types .filter-list .filter-label .checkbox-filter input[type="checkbox"]:checked {
+    background-color: var(--clr--secondary--300);
+  }
+  .computers-section .filters .filter-by-type .filter-types .filter-list .filter-label .checkbox-filter input[type="checkbox"]:checked::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../svgs/check-mark-10118.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .computers-section .filters .filter-by-condition {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+  }
+  .computers-section .filters .filter-by-condition .filter-by-condition-button {
+    border: none;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: var(--fw--800);
+    font-size: var(--fs-24);
+    color: var(--clr--secondary--300);
+    gap: var(--sp--icon--md--gap);
+  }
+  .computers-section .filters .filter-by-condition .filter-by-condition-button .cs-image-container-by-condition {
+    position: relative;
+  }
+  .computers-section .filters .filter-by-condition .filter-by-condition-button .cs-image-container-by-condition img {
+    width: 0.625rem;
+    height: 0.625rem;
+  }
+  .computers-section .filters .filter-by-condition .filter-by-condition-button .cs-image-container-by-condition .down-arrow-conditions {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .computers-section .filters .filter-by-condition .filter-by-condition-button .cs-image-container-by-condition .up-arrow-conditions {
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+  .computers-section .filters .filter-by-condition .filter-conditions {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-left: var(--sp--icon--md--gap);
+    transition: grid-template-rows 0.3s;
+  }
+  .computers-section .filters .filter-by-condition .filter-conditions .filter-list {
+    overflow: hidden;
+  }
+  .computers-section .filters .filter-by-condition .filter-conditions .filter-list .filter-label {
+    display: flex;
+    justify-content: space-between;
+  }
+  .computers-section .filters .filter-by-condition .filter-conditions .filter-list .filter-label .checkbox-filter {
+    display: flex;
+    gap: 0.625rem;
+    align-items: center;
+  }
+  .computers-section .filters .filter-by-condition .filter-conditions .filter-list .filter-label .checkbox-filter input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 2px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--clr--secondary--300);
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .computers-section .filters .filter-by-condition .filter-conditions .filter-list .filter-label .checkbox-filter input[type="checkbox"]:checked {
+    background-color: var(--clr--secondary--300);
+  }
+  .computers-section .filters .filter-by-condition .filter-conditions .filter-list .filter-label .checkbox-filter input[type="checkbox"]:checked::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../svgs/check-mark-10118.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .computers-section .computers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 60rem;
+    gap: 1rem;
+  }
+  .computers-section .computers-grid .computer-card {
+    background-color: var(--clr--primary--150);
+    max-width: 24.25rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: var(--sp--cards--padding);
+    gap: 2rem;
+    border: 1px solid var(--clr--primary--165);
+  }
+  .computers-section .computers-grid .computer-card .computer-img {
+    object-fit: cover;
+    display: block;
+    border-radius: 1.5rem;
+  }
+  .computers-section .computers-grid .computer-card .computer-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: start;
+    gap: 1rem;
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+  }
+  .computers-section .computers-grid .computer-card .computer-info .computer-title .data-brand {
+    font-size: var(--fs--subtitle);
+    font-weight: var(--fw--subtitle);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    color: var(--clr--secondary--300);
+    display: block;
+  }
+  .computers-section .computers-grid .computer-card .computer-info .computer-title .data-model {
+    font-size: var(--fs--body);
+    line-height: 1.5em;
+    max-width: 12.5rem;
+    display: block;
+  }
+  .computers-section .computers-grid .computer-card .computer-info .computer-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .computers-section .computers-grid .computer-card .computer-info .computer-meta .meta-data {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+  .computers-section .computers-grid .computer-card .computer-info .computer-meta .meta-data .data-intro {
+    color: var(--clr--secondary--300);
+    font-weight: var(--fw--600);
+    min-width: 5.25rem;
+  }
+  .computers-section .computers-grid .computer-card .computer-info .computer-meta .meta-data .cpu,
+  .computers-section .computers-grid .computer-card .computer-info .computer-meta .meta-data .ram,
+  .computers-section .computers-grid .computer-card .computer-info .computer-meta .meta-data .gpu {
+    text-transform: uppercase;
+  }
+  .computers-section .computers-grid .computer-card .computer-info .computer-price {
+    font-size: var(--fs--subtitle);
+    font-weight: var(--fw--subtitle);
+    line-height: 1.2em;
+    color: #02379c;
+  }
+  .active-brand .filters .filter-by-brand .filter-by-brand-button .cs-image-container-by-brand .down-arrow-brands {
+    opacity: 1;
+  }
+  .active-brand .filters .filter-by-brand .filter-by-brand-button .cs-image-container-by-brand .up-arrow-brands {
+    opacity: 0;
+  }
+  .active-brand .filters .filter-by-brand .filter-brands {
+    grid-template-rows: 0fr 0fr;
+  }
+  .active-brand .filters .filter-by-brand .filter-brands .filter-list {
+    overflow: hidden;
+  }
+  .active-type .filters .filter-by-type .filter-by-type-button .cs-image-container-by-type .down-arrow-types {
+    opacity: 1;
+  }
+  .active-type .filters .filter-by-type .filter-by-type-button .cs-image-container-by-type .up-arrow-types {
+    opacity: 0;
+  }
+  .active-type .filters .filter-by-type .filter-types {
+    grid-template-rows: 0fr 0fr;
+  }
+  .active-type .filters .filter-by-type .filter-types .filter-list {
+    overflow: hidden;
+  }
+  .active-condition .filters .filter-by-condition .filter-by-condition-button .cs-image-container-by-condition .down-arrow-conditions {
+    opacity: 1;
+  }
+  .active-condition .filters .filter-by-condition .filter-by-condition-button .cs-image-container-by-condition .up-arrow-conditions {
+    opacity: 0;
+  }
+  .active-condition .filters .filter-by-condition .filter-conditions {
+    grid-template-rows: 0fr 0fr;
+  }
+  .active-condition .filters .filter-by-condition .filter-conditions .filter-list {
+    overflow: hidden;
+  }
+}
+@media only screen and (min-width: 820px) {
+  .computers-section .filters {
+    margin-inline: initial;
+  }
+  .computers-section .computers-grid {
+    justify-content: start;
+  }
+}

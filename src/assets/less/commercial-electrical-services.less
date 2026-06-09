@@ -1,0 +1,93 @@
+@media only screen and (min-width: 0rem) {
+  #commercial-electrical-services {
+    background-color: var(--clr--primary--100);
+    .cs-container {
+      margin-inline: auto;
+      .cs-content {
+        .cs-title,
+        .cs-text {
+          margin-inline: auto;
+          text-align: center;
+        }
+        .cs-text {
+          margin-block-end: var(--sp--comp--related--gap);
+        }
+      }
+      .cs-ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        gap: var(--sp--cards--gap--large);
+        justify-items: center;
+        .cs-item {
+          background-color: var(--clr--primary--150);
+          display: block;
+          padding: var(--sp--cards--padding);
+          border-radius: var(--border--radius--sml);
+          max-width: (396/16rem);
+          border: 1px solid var(--clr--primary--165);
+          .cs-subtitle {
+            text-align: center;
+            font-size: var(--fs--h4);
+            font-weight: var(--fw--900);
+            margin-block-end: var(--sp--h4--margin);
+            text-transform: uppercase;
+            color: var(--h4-dark--txt--clr);
+            line-height: 1.2em;
+          }
+          .cs-text {
+            text-align: center;
+          }
+          .cs-cta-container {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin-block-end: var(--sp--56);
+            .cs-button-solid {
+              min-width: 0;
+              padding: var(--sp--8) var(--sp--16);
+              font-size: 14px;
+              line-height: var(--sp--20);
+            }
+          }
+          img {
+            height: auto;
+            width: 100%;
+            object-fit: cover;
+            border-radius: var(--border--radius--lg);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*----768px----*/
+@media only screen and (min-width: 48rem) {
+  #commercial-electrical-services {
+    .cs-container {
+      .cs-ul {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        max-width: (728/16rem);
+        margin-inline: auto;
+        .cs-item {
+          //max-width: (396/16rem);
+        }
+      }
+    }
+  }
+}
+/*----1024px----*/
+@media only screen and (min-width: 72.688rem) {
+  #commercial-electrical-services {
+    .cs-container {
+      .cs-ul {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        max-width: 100%;
+        margin-inline: auto;
+      }
+    }
+  }
+}

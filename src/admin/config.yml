@@ -1,0 +1,24 @@
+backend:
+  name: git-gateway
+  branch: main-00
+local_backend: true
+logo_url: https://codestitch.app/frontend/images/logo.png
+media_folder: "src/assets/images/cms"
+public_folder: "/assets/images/cms"
+collections:
+  - name: "cms"
+    label: "cms"
+    folder: "src/content/cms"
+    create: true
+    slug: "{{brand}}-{{slug}}"
+    fields:
+      - { label: "Brand", name: "brand", widget: "select", options: ["Dell", "HP", "Apple", "Lenovo", "Asus", "Acer"] }
+      - { label: "Model", name: "model", widget: "string" }
+      - { label: "Cpu", name: "cpu", widget: "string" }
+      - { label: "Ram", name: "ram", widget: "string" }
+      - { label: "Storage", name: "storage", widget: "string" }
+      - { label: "Gpu", name: "gpu", widget: "string", required: false }
+      - { label: "Condition", name: "condition", widget: "select", options: ["Refurbished", "Used"] }
+      - { label: "Type", name: "type", widget: "select", options: ["Laptop", "Desktop", "All-in-One"] }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Price", name: "price", widget: "number"}

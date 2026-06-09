@@ -1,0 +1,72 @@
+---
+title: "About you"
+description: "Hello about description"
+preloadImg: "/assets/images/cabinets2.jpg"
+permalink: "about/"
+intro: "abouts us"
+eleventyNavigation:
+  key: About Us
+  order: 200
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/about.css" />
+{% endblock %} {% block body %}
+<section id="about-page">
+  <div class="cs-container">
+    <div class="cs-image">
+      <picture class="cs-pic-1">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/arches-s-c.jpg"
+        />
+        <source
+          media="(min-width: 600px)"
+          srcset="/assets/images/arches-l-c.jpg"
+        />
+        <img class="cs-picture-1" src="/assets/images/arches-l-c.jpg" />
+      </picture>
+      <picture class="cs-pic-2">
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/photo-s-c.jpg"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/photo-l-c.jpg"
+        />
+        <img class="cs-picture-2" src="/assets/images/photo-l-c.jpg" />
+      </picture>
+    </div>
+    <div class="cs-content">
+      <span class="cs-topper">Utah Web Pros </span>
+      <h2 class="cs-title">
+        Building Your <span class="accent-text-color">Vision</span>, Starting
+        with the <span class="accent-text-color">End in Mind</span>
+      </h2>
+      <p class="cs-text">
+        Hi, I'm Tantely, the owner and lead developer of Utah Web Pros.
+        Originally from Madagascar, I've been living in the U.S. for 16 years. I
+        married a wonderful woman from Utah, and together, we have three amazing
+        sons. With an advanced degree in economics, I have a strong ability to
+        spot patterns, analyze trends, and draw meaningful conclusions. This
+        analytical mindset allows me to design websites that are not only
+        visually captivating but also strategically optimized for growth and
+        performance.
+      </p>
+      <p class="cs-text">
+        My passion for web development stems from the satisfaction of seeing my
+        code come to life. Every line I write directly impacts the end result,
+        allowing me to create seamless, high-quality websites that truly stand
+        out.
+      </p>
+      <p class="cs-text">
+        If you're seeking a website that’s unique, scalable, and built to
+        perform, let's make your vision a reality. Reach out, and let's create
+        something amazing together!
+      </p>
+      <a class="cs-button-solid" href="/contact/">Call Us Today</a>
+    </div>
+  </div>
+</section>
+{% include "components/contact_2.html" %} {% endblock %}

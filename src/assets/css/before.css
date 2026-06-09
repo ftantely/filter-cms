@@ -1,0 +1,25 @@
+.test {
+  background-image: url("src/assets/images/cabinets-m.jpg");
+  width: 900px;
+  height: 60px;
+  border: 1px solid darkcyan;
+  background-color: darkgrey;
+}
+.test .before-test {
+  background-color: darkgoldenrod;
+  display: flex;
+  /*  p::before {
+      background-color: #9daf09;
+      width: 10px;
+      height: 10px;
+    }*/
+}
+.test .before-test p {
+  background-color: #9dafe5;
+}
+.test .before-test p::before {
+  content: url("https://tinyurl.com/yvrp3zvj");
+  background-color: #9daf09;
+  width: 100px;
+  height: 100px;
+}

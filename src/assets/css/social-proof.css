@@ -1,0 +1,5 @@
+@media only screen and (min-width: 0rem) {
+  #social-proof {
+    background-color: var(--clr--primary--100);
+  }
+}

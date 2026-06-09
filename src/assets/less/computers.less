@@ -1,0 +1,421 @@
+@media only screen and (min-width: 0rem) {
+  .computers-section {
+    .filters {
+      max-width: (400/16rem);
+      display: flex;
+      flex-direction: column;
+      row-gap: var(--sp--li-vert-gap);
+      margin-inline: auto;
+      margin-bottom: var(--sp--comp--related--gap);
+      padding: var(--sp--cards--padding);
+      background-color: var(--clr--primary--150);
+      border-radius: (24/16rem);
+      .all-label {
+        text-transform: uppercase;
+        display: flex;
+        gap: var(--sp--icon--md--gap);
+        font-weight: var(--fw--800);
+        font-size: var(--fs-24);
+        color: var(--clr--secondary--300);
+        .all-input {
+          input[type="checkbox"] {
+            appearance: none;
+            -webkit-appearance: none;
+            padding: 2px;
+            width: 18px;
+            height: 18px;
+            border: 1px solid var(--clr--secondary--300);
+            border-radius: 3px;
+            cursor: pointer;
+          }
+          input[type="checkbox"]:checked {
+            background-color: var(--clr--secondary--300);
+          }
+          input[type="checkbox"]:checked::after {
+            content: "";
+            display: block;
+            width: 100%; /* fills the checkbox */
+            height: 100%; /* fills the checkbox */
+            background-image: url("../svgs/check-mark-10118.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+      }
+      .filter-by-brand {
+        display: flex;
+        flex-direction: column;
+        gap: (6/16rem);
+        .filter-by-brand-button {
+          border: none;
+          background-color: inherit;
+          display: flex;
+          align-items: center;
+          text-transform: uppercase;
+          font-weight: var(--fw--800);
+          font-size: var(--fs-24);
+          color: var(--clr--secondary--300);
+          gap: var(--sp--icon--md--gap);
+          .cs-image-container-by-brand {
+            position: relative;
+            img {
+              width: (10/16rem);
+              height: (10/16rem);
+            }
+            .down-arrow-brands {
+              position: absolute;
+              opacity: 0;
+              transition: opacity 0.3s;
+            }
+            .up-arrow-brands {
+              opacity: 1;
+              transition: opacity 0.3s;
+            }
+          }
+        }
+        .filter-brands {
+          display: grid;
+          grid-template-rows: 1fr 1fr;
+          margin-left: var(--sp--icon--md--gap);
+          transition: grid-template-rows 0.3s;
+          .filter-list {
+            overflow: hidden;
+            .filter-label {
+              display: flex;
+              justify-content: space-between;
+              .checkbox-filter {
+                display: flex;
+                gap: (10/16rem);
+                align-items: center;
+                input[type="checkbox"] {
+                  appearance: none;
+                  -webkit-appearance: none;
+                  padding: 2px;
+                  width: 18px;
+                  height: 18px;
+                  border: 1px solid var(--clr--secondary--300);
+                  border-radius: 3px;
+                  cursor: pointer;
+                }
+                input[type="checkbox"]:checked {
+                  background-color: var(--clr--secondary--300);
+                }
+                input[type="checkbox"]:checked::after {
+                  content: "";
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  background-image: url("../svgs/check-mark-10118.svg");
+                  background-size: contain;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                }
+              }
+            }
+          }
+        }
+      }
+      .filter-by-type {
+        display: flex;
+        flex-direction: column;
+        gap: (6/16rem);
+        .filter-by-type-button {
+          border: none;
+          background-color: inherit;
+          display: flex;
+          align-items: center;
+          text-transform: uppercase;
+          font-weight: var(--fw--800);
+          font-size: var(--fs-24);
+          color: var(--clr--secondary--300);
+          gap: var(--sp--icon--md--gap);
+          .cs-image-container-by-type {
+            position: relative;
+            img {
+              width: (10/16rem);
+              height: (10/16rem);
+            }
+            .down-arrow-types {
+              position: absolute;
+              opacity: 0;
+              transition: opacity 0.3s;
+            }
+            .up-arrow-types {
+              opacity: 1;
+              transition: opacity 0.3s;
+            }
+          }
+        }
+        .filter-types {
+          display: grid;
+          grid-template-rows: 1fr 1fr;
+          margin-left: var(--sp--icon--md--gap);
+          transition: grid-template-rows 0.3s;
+          .filter-list {
+            overflow: hidden;
+            .filter-label {
+              display: flex;
+              justify-content: space-between;
+              .checkbox-filter {
+                display: flex;
+                gap: (10/16rem);
+                align-items: center;
+                input[type="checkbox"] {
+                  appearance: none;
+                  -webkit-appearance: none;
+                  padding: 2px;
+                  width: 18px;
+                  height: 18px;
+                  border: 1px solid var(--clr--secondary--300);
+                  border-radius: 3px;
+                  cursor: pointer;
+                }
+                input[type="checkbox"]:checked {
+                  background-color: var(--clr--secondary--300);
+                }
+                input[type="checkbox"]:checked::after {
+                  content: "";
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  background-image: url("../svgs/check-mark-10118.svg");
+                  background-size: contain;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                }
+              }
+            }
+          }
+        }
+      }
+      .filter-by-condition {
+        display: flex;
+        flex-direction: column;
+        gap: (6/16rem);
+        .filter-by-condition-button {
+          border: none;
+          background-color: inherit;
+          display: flex;
+          align-items: center;
+          text-transform: uppercase;
+          font-weight: var(--fw--800);
+          font-size: var(--fs-24);
+          color: var(--clr--secondary--300);
+          gap: var(--sp--icon--md--gap);
+          .cs-image-container-by-condition {
+            position: relative;
+            img {
+              width: (10/16rem);
+              height: (10/16rem);
+            }
+            .down-arrow-conditions {
+              position: absolute;
+              opacity: 0;
+              transition: opacity 0.3s;
+            }
+            .up-arrow-conditions {
+              opacity: 1;
+              transition: opacity 0.3s;
+            }
+          }
+        }
+        .filter-conditions {
+          display: grid;
+          grid-template-rows: 1fr 1fr;
+          margin-left: var(--sp--icon--md--gap);
+          transition: grid-template-rows 0.3s;
+          .filter-list {
+            overflow: hidden;
+            .filter-label {
+              display: flex;
+              justify-content: space-between;
+              .checkbox-filter {
+                display: flex;
+                gap: (10/16rem);
+                align-items: center;
+                input[type="checkbox"] {
+                  appearance: none;
+                  -webkit-appearance: none;
+                  padding: 2px;
+                  width: 18px;
+                  height: 18px;
+                  border: 1px solid var(--clr--secondary--300);
+                  border-radius: 3px;
+                  cursor: pointer;
+                }
+                input[type="checkbox"]:checked {
+                  background-color: var(--clr--secondary--300);
+                }
+                input[type="checkbox"]:checked::after {
+                  content: "";
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  background-image: url("../svgs/check-mark-10118.svg");
+                  background-size: contain;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .computers-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 60rem;
+      gap: 1rem;
+
+      .computer-card {
+        background-color: var(--clr--primary--150);
+        max-width: (388/16rem);
+        border-radius: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        padding: var(--sp--cards--padding);
+        gap: 2rem;
+        border: 1px solid var(--clr--primary--165);
+        .computer-img {
+          //justify-self: center;
+          object-fit: cover;
+          display: block;
+          border-radius: 1.5rem;
+        }
+        .computer-info {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+          align-items: start;
+          gap: 1rem;
+          border-bottom-right-radius: 1.5rem;
+          border-bottom-left-radius: 1.5rem;
+          .computer-title {
+            .data-brand {
+              font-size: var(--fs--subtitle);
+              font-weight: var(--fw--subtitle);
+              line-height: 1.2em;
+              text-transform: uppercase;
+              color: var(--clr--secondary--300);
+              display: block;
+            }
+            .data-model {
+              font-size: var(--fs--body);
+              line-height: 1.5em;
+              max-width: (200/16rem);
+              display: block;
+            }
+          }
+          .computer-meta {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            .meta-data {
+              display: flex;
+              justify-content: space-around;
+              //background-color: red;
+              gap: (16/16rem);
+              .data-intro {
+                color: var(--clr--secondary--300);
+                font-weight: var(--fw--600);
+                min-width: (84/16rem);
+              }
+              .cpu,
+              .ram,
+              .gpu {
+                text-transform: uppercase;
+              }
+            }
+          }
+          .computer-price {
+            font-size: var(--fs--subtitle);
+            font-weight: var(--fw--subtitle);
+            line-height: 1.2em;
+            color: #02379c;
+          }
+        }
+      }
+    }
+  }
+  .active-brand {
+    .filters {
+      .filter-by-brand {
+        .filter-by-brand-button {
+          .cs-image-container-by-brand {
+            .down-arrow-brands {
+              opacity: 1;
+            }
+            .up-arrow-brands {
+              opacity: 0;
+            }
+          }
+        }
+        .filter-brands {
+          grid-template-rows: 0fr 0fr;
+          .filter-list {
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+  .active-type {
+    .filters {
+      .filter-by-type {
+        .filter-by-type-button {
+          .cs-image-container-by-type {
+            .down-arrow-types {
+              opacity: 1;
+            }
+            .up-arrow-types {
+              opacity: 0;
+            }
+          }
+        }
+        .filter-types {
+          grid-template-rows: 0fr 0fr;
+          .filter-list {
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+  .active-condition {
+    .filters {
+      .filter-by-condition {
+        .filter-by-condition-button {
+          .cs-image-container-by-condition {
+            .down-arrow-conditions {
+              opacity: 1;
+            }
+            .up-arrow-conditions {
+              opacity: 0;
+            }
+          }
+        }
+        .filter-conditions {
+          grid-template-rows: 0fr 0fr;
+          .filter-list {
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 820px) {
+  .computers-section {
+    .filters {
+      margin-inline: initial;
+    }
+    .computers-grid {
+      justify-content: start;
+    }
+  }
+}

@@ -1,0 +1,280 @@
+@media only screen and (min-width: 0rem) {
+  #price-details .cs-container {
+    margin-inline: auto;
+  }
+  #price-details .cs-container .cs-content {
+    margin-block: 1.5rem;
+  }
+  #price-details .cs-container .cs-content .cs-title {
+    text-align: center;
+    margin-inline: auto;
+  }
+  #price-details .cs-container .cs-content p {
+    text-align: center;
+  }
+  #price-details .cs-container .details {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    gap: var(--medium-gap);
+    justify-self: stretch;
+  }
+  #price-details .cs-container .details .rectangle {
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+    width: 100%;
+    max-width: 30.625rem;
+    margin-inline: auto;
+    padding: 0;
+    position: relative;
+    background: var(--clr--secondary--300);
+  }
+  #price-details .cs-container .details .rectangle .cs-options {
+    z-index: 2;
+    background-color: var(--clr--accent--300);
+    position: relative;
+    border-top-right-radius: 39px;
+    border-top-left-radius: 39px;
+    padding-top: var(--rectangle-padding);
+  }
+  #price-details .cs-container .details .rectangle .cs-options #wave {
+    position: relative;
+    margin-bottom: -10px;
+  }
+  #price-details .cs-container .details .rectangle .cs-options #wave path {
+    fill: var(--clr--secondary--300);
+  }
+  #price-details .cs-container .details .rectangle .cs-options .cs-subtitle {
+    margin-inline: auto;
+    text-align: center;
+    background-color: var(--clr--accent--300);
+    color: var(--clr--secondary--300);
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+  }
+  #price-details .cs-container .details .rectangle .cs-options .light-title {
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--clr--accent--300);
+    color: var(--clr--secondary--300);
+  }
+  #price-details .cs-container .details .rectangle .list {
+    margin-block-start: 0;
+    display: flex;
+    flex-direction: column;
+    padding: var(--rectangle-padding);
+    gap: var(--row-gap-text);
+  }
+  #price-details .cs-container .details .rectangle .list .cs-li {
+    display: flex;
+    width: 100%;
+    color: var(--clr--primary--100);
+    align-items: start;
+    justify-content: space-between;
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.2em;
+    row-gap: 1rem;
+  }
+  #price-details .cs-container .details .rectangle .list .cs-li .checkmark {
+    width: 22px;
+    height: 22px;
+    margin-inline-start: 15px;
+  }
+  #price-details .cs-container .details .rectangle .subscription-price {
+    display: flex;
+    flex-direction: column;
+    font-weight: 900;
+    font-size: 3.0625rem;
+    width: 200px;
+    height: 200px;
+    background-color: var(--clr--accent--300);
+    color: var(--clr--secondary--300);
+    border-radius: 50%;
+    margin-block-start: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-inline: auto;
+    row-gap: 16px;
+  }
+  #price-details
+    .cs-container
+    .details
+    .rectangle
+    .subscription-price
+    .per-month {
+    font-size: 1rem;
+    line-height: 1.2em;
+    font-weight: 900;
+    margin-block: var(--p-margin);
+  }
+  #price-details .cs-container .details .rectangle .cs-button-solid-accent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-block: 1rem var(--rectangle-padding);
+    margin-inline: auto;
+    align-items: center;
+  }
+  #price-details .cs-container .details .rectangle:nth-child(2) {
+    background: var(--secondary-150);
+  }
+  #price-details .cs-container .details .rectangle:nth-child(2) .cs-options {
+    background-color: var(--clr--secondary--300);
+  }
+  #price-details
+    .cs-container
+    .details
+    .rectangle:nth-child(2)
+    .cs-options
+    .cs-subtitle {
+    color: var(--clr--primary--100);
+    background-color: var(--clr--secondary--300);
+  }
+  #price-details
+    .cs-container
+    .details
+    .rectangle:nth-child(2)
+    .cs-options
+    .light-title {
+    background-color: var(--clr--secondary--300);
+    color: var(--clr--primary--100);
+  }
+  #price-details
+    .cs-container
+    .details
+    .rectangle:nth-child(2)
+    .cs-options
+    #wave
+    path {
+    fill: var(--secondary-150);
+  }
+  #price-details .cs-container .details .rectangle:nth-child(2) .list .cs-li,
+  #price-details .cs-container .details .rectangle:nth-child(2) .list li {
+    color: var(--body-dark--txt--clr);
+  }
+  #price-details .cs-container .details .rectangle:nth-child(2) .onetime-price {
+    display: flex;
+    flex-direction: column;
+    font-weight: 900;
+    font-size: 3.0625rem;
+    width: 200px;
+    height: 200px;
+    background-color: var(--clr--secondary--300);
+    color: var(--clr--primary--100);
+    border-radius: 50%;
+    margin-block-start: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-inline: auto;
+    row-gap: 16px;
+  }
+  #price-details
+    .cs-container
+    .details
+    .rectangle:nth-child(2)
+    .onetime-price
+    .one-time {
+    font-size: 1rem;
+    line-height: 1.2em;
+    font-weight: 900;
+    margin-block: var(--p-margin);
+  }
+  #price-details .cs-container .cs-button-solid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-block: 1rem var(--rectangle-padding);
+    margin-inline: auto;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  #price-details .cs-container .details {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    align-items-items: center;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #price-details .details .rectangle {
+    border: 1px solid var(--secondary-375);
+    background: var(--dark);
+  }
+  body.dark-mode #price-details .details .rectangle .list .cs-li {
+    color: var(--secondary-185);
+  }
+  body.dark-mode #price-details .details .rectangle .cs-options #wave {
+    margin-inline: 0;
+  }
+  body.dark-mode #price-details .details .rectangle .cs-options #wave path {
+    fill: var(--dark);
+  }
+  body.dark-mode #price-details .details .rectangle:nth-child(2) {
+    background: var(--clr--secondary--300);
+  }
+  body.dark-mode #price-details .details .rectangle:nth-child(2) .cs-options {
+    background-color: var(--dark);
+  }
+  body.dark-mode
+    #price-details
+    .details
+    .rectangle:nth-child(2)
+    .cs-options
+    .cs-subtitle {
+    z-index: -2;
+    background: none;
+  }
+  body.dark-mode
+    #price-details
+    .details
+    .rectangle:nth-child(2)
+    .cs-options
+    .light-title {
+    z-index: -1;
+    background: none;
+  }
+  body.dark-mode
+    #price-details
+    .details
+    .rectangle:nth-child(2)
+    .cs-options
+    #wave {
+    margin-inline: 0;
+  }
+  body.dark-mode
+    #price-details
+    .details
+    .rectangle:nth-child(2)
+    .cs-options
+    #wave
+    path {
+    fill: var(--clr--secondary--300);
+    filter: drop-shadow(0px 0px 20px var(--clr--secondary--300));
+  }
+  body.dark-mode #price-details .details .rectangle:nth-child(2) .list .cs-li,
+  body.dark-mode #price-details .details .rectangle:nth-child(2) .list li {
+    color: var(--secondary-185);
+  }
+  body.dark-mode
+    #price-details
+    .details
+    .rectangle:nth-child(2)
+    .list
+    .cs-li
+    img,
+  body.dark-mode #price-details .details .rectangle:nth-child(2) .list li img {
+    filter: grayscale(100%) brightness(700%);
+  }
+  body.dark-mode
+    #price-details
+    .details
+    .rectangle:nth-child(2)
+    .onetime-price {
+    background-color: var(--clr--primary--100);
+    color: var(--dark);
+  }
+}

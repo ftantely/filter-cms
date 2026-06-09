@@ -1,0 +1,92 @@
+@media only screen and (min-width: 0em) {
+  #about-page .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2.5rem;
+  }
+  #about-page .cs-container .cs-image {
+    font-size: min(1.7752vw, 0.75em);
+    width: 41em;
+    height: 42em;
+    /*  max-width: (532.555/16rem);
+        max-heigth: (447.344/16rem);*/
+    position: relative;
+  }
+  #about-page .cs-container .cs-image .cs-pic-1 {
+    display: block;
+    top: 6.5em;
+    left: 0;
+    position: absolute;
+    width: 27.167em;
+    height: 31.3335em;
+    border-radius: 2.381em;
+  }
+  #about-page .cs-container .cs-image .cs-pic-1 .cs-picture-1 {
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 2.381em;
+    border: clamp(0.8em, 1.2vw, 1em) solid var(--clr--primary--100);
+    box-shadow: 2px 2px 60px hsl(192, 6%, 80%);
+  }
+  #about-page .cs-container .cs-image .cs-pic-2 {
+    z-index: 3;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 18.8335em;
+    height: 23em;
+    border-radius: 2.381em;
+  }
+  #about-page .cs-container .cs-image .cs-pic-2 .cs-picture-2 {
+    z-index: 1;
+    right: 0;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2.381em;
+    border: clamp(0.8em, 1.2vw, 1em) solid var(--clr--primary--100);
+    box-shadow: 2px 2px 60px hsl(192, 6%, 80%);
+  }
+  #about-page .cs-container .cs-content {
+    max-width: 33.875rem;
+  }
+  #about-page .cs-container .cs-content .cs-topper {
+    text-align: start;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  #about-page .cs-container {
+    flex-flow: row;
+    justify-content: space-between;
+    column-gap: 3.25rem;
+  }
+  #about-page .cs-container .cs-image {
+    font-size: min(1.182vw, 0.9459em);
+    flex: none;
+    margin-block: auto;
+  }
+  #about-page .cs-container .cs-image .cs-pic-2 .cs-picture-2 {
+    border-width: 12px;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #about-page .cs-container .cs-image .cs-pic-1 .cs-picture-1 {
+    box-shadow: none;
+  }
+  body.dark-mode #about-page .cs-container .cs-image .cs-pic-2 .cs-picture-2 {
+    box-shadow: none;
+  }
+}

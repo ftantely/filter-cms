@@ -1,0 +1,97 @@
+@media only screen and (min-width: 0rem) {
+  #social-proof {
+    .cs-container {
+      background-color: var(--clr--primary--100);
+      margin-inline: auto;
+
+      .cs-content {
+        margin-block-end: var(--sp--comp--unrelated--gap);
+        .cs-title,
+        p {
+          text-align: center;
+          margin-inline: auto;
+        }
+      }
+      .cs-card {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: var(--sp--cards--gap--large);
+        justify-items: center;
+        max-width: (1024/16rem);
+        margin-inline: auto;
+        .cs-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid var(--clr--primary--165);
+          padding: var(--sp--cards--padding);
+          width: 100%;
+          height: 100%;
+          min-height: (280/16rem);
+          border-radius: var(--sp--24);
+
+          .stat-number {
+            font-size: var(--fs--header);
+            font-weight: var(--fw--header);
+            line-height: 1.3em;
+            color: var(--clr--secondary--300);
+          }
+          .stat-label {
+            color: var(--clr--secondary--300);
+          }
+        }
+        .cs-item:nth-child(1) {
+          background-color: #2196f3;
+        }
+        .cs-item:nth-child(2) {
+          background-color: #9c27b0;
+        }
+        .cs-item:nth-child(3) {
+          background-color: #4caf50;
+        }
+        .cs-item:nth-child(4) {
+          background-color: #ff9800;
+        }
+      }
+    }
+  }
+  body.dark-mode {
+    #social-proof {
+      .cs-container {
+      }
+      .cs-card {
+        .cs-item {
+          background-color: #021123 !important;
+          border-color: #022147;
+        }
+      }
+    }
+  }
+}
+/*----480px----*/
+@media only screen and (min-width: (480/16rem)) {
+  #social-proof {
+    .cs-container {
+      .cs-card {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      }
+    }
+  }
+}
+//@media only screen and (min-width: (1024/16rem)) {
+//  #social-proof {
+//    .cs-container {
+//      border: 1px solid hsl(218, 11%, 86%);
+//      padding-block-start: var(--sp--60);
+//      padding-block-end: var(--sp--72);
+//      padding-inline: var(--sp--24);
+//      background-color: hsl(216, 16%, 94%);
+//      border-radius: var(--sp--24);
+//      .cs-card {
+//      }
+//    }
+//  }
+//}

@@ -1,0 +1,108 @@
+@media only screen and (min-width: 0rem) {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+  #service-page {
+    position: relative;
+    z-index: 2;
+    z-index: 0;
+  }
+  #service-page .cs-container {
+    max-width: 34.375rem;
+    margin-inline: auto;
+  }
+  #service-page .cs-container .cs-content .cs-title {
+    margin-inline: auto;
+    text-align: center;
+  }
+  #service-page .cs-container .cs-content .cs-text {
+    margin-block-end: var(--sp--comp--related--gap);
+    text-align: center;
+    margin-inline: auto;
+    margin-bottom: 0;
+  }
+  #service-page .cs-container .cs-cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp--comp--unrelated--gap);
+    align-items: center;
+  }
+  #service-page .cs-container .cs-cards .cs-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp--comp--related--gap);
+    align-items: start;
+  }
+  #service-page .cs-container .cs-cards .cs-item .cs-paragraph {
+    padding: 3rem;
+    background-color: var(--clr--primary--150);
+    order: 2;
+  }
+  #service-page .cs-container .cs-cards .cs-item .cs-paragraph .cs-subtitle {
+    color: var(--clr--accent--300);
+  }
+  #service-page .cs-container .cs-cards .cs-item .cs-laptop {
+    width: 100%;
+    height: 100%;
+    max-width: 24.375rem;
+    max-height: 13.625rem;
+    border-radius: 1.5rem;
+    order: 1;
+  }
+  #service-page .cs-container .cs-cards .cs-item:nth-child(1) .cs-paragraph {
+    border-radius: 6rem 0 6rem 0;
+  }
+  #service-page .cs-container .cs-cards .cs-item:nth-child(2) .cs-paragraph {
+    border-radius: 0 6rem 0 6rem;
+  }
+  #service-page .cs-container .cs-cards .cs-item:nth-child(3) .cs-paragraph {
+    border-radius: 6rem 0 6rem 0;
+  }
+  #service-page .cs-container .cs-cards .cs-item:nth-child(4) .cs-paragraph {
+    border-radius: 0 6rem 0 6rem;
+  }
+}
+/*----768px----*/
+@media only screen and (min-width: 48rem) {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 7.5rem;
+  }
+  #service-page {
+    position: relative;
+    z-index: 2;
+    z-index: 0;
+  }
+  #service-page .cs-container {
+    max-width: 80rem;
+  }
+  #service-page .cs-container .cs-cards .cs-item {
+    flex-direction: row;
+  }
+  #service-page .cs-container .cs-cards .cs-item .cs-paragraph {
+    max-width: 25.75rem;
+    padding: 3rem;
+  }
+  #service-page .cs-container .cs-cards .cs-item:nth-child(1) .cs-paragraph {
+    order: 1;
+  }
+  #service-page .cs-container .cs-cards .cs-item:nth-child(1) picture {
+    order: 2;
+  }
+  #service-page .cs-container .cs-cards .cs-item:nth-child(3) .cs-paragraph {
+    order: 1;
+  }
+  #service-page .cs-container .cs-cards .cs-item:nth-child(3) picture {
+    order: 2;
+  }
+  #service-page .cs-container .cs-cards .cs-item:nth-child(4) {
+    scroll-padding-top: 4rem;
+  }
+  #service-page .cs-container .cs-cards .cs-item:nth-child(4) .cs-paragraph {
+    order: 2;
+  }
+  #service-page .cs-container .cs-cards .cs-item:nth-child(4) picture {
+    order: 1;
+  }
+}

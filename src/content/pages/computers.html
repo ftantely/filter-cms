@@ -1,0 +1,169 @@
+---
+title: "Computers | Your Store Name"
+description: "Buy and sell refurbished and used computers"
+permalink: "computers/"
+eleventyNavigation:
+  key: Computers
+  order: 500
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/computers.css" />
+{% endblock %} {% block body %}
+
+<section class="computers-section"/>
+  <div class="filters">
+    <label class='all-label'>
+      <span class='all-input'> <input type="checkbox" value="all" checked /></span>
+      <span class='all-text'>
+        All
+      </span>
+    </label>
+    <div class="filter-by-brand">
+      <button class="filter-by-brand-button filter-button">
+        <span class="image-container cs-image-container-by-brand"
+          ><img class='down-arrow down-arrow-brands' src="/assets/images/down-arrow-7425.svg" />
+          <img class='up-arrow up-arrow-brands'src="/assets/images/up-arrow-7425.svg"
+        /></span>
+        Filter by Brand
+      </button>
+      <ul class="filter-brands filter-collections">
+        {% if collections.cms %} {% set brands = collections.cms |
+        groupby("data.brand") %} {% for brand, items in brands %}
+        <li class="filter-list">
+          <label class="filter-label">
+            <span class='checkbox-filter'>
+              <input type="checkbox" value="{{ brand }}" />
+              <span class='filter-span'>{{ brand }}</span>
+            </span>
+            <span class='items-length'>
+              ({{ items | length }})
+            </span>
+          </label>
+        </li>
+        {% endfor %} {% endif %}
+      </ul>
+    </div>
+    <div class="filter-by-type">
+      <button class="filter-by-type-button">
+        <span class="cs-image-container-by-type"
+          ><img class='down-arrow-types' src="/assets/images/down-arrow-7425.svg" />
+          <img class='up-arrow-types'src="/assets/images/up-arrow-7425.svg"
+        /></span>
+        Filter by Type
+      </button>
+      <ul class="filter-types">
+        {% if collections.cms %} {% set types = collections.cms |
+        groupby("data.type") %} {% for type, items in types %}
+        <li class="filter-list">
+          <label class="filter-label">
+            <span class='checkbox-filter'>
+              <input type="checkbox" value="{{ type }}" />
+              <span class='filter-span'>{{ type }}</span>
+            </span>
+            <span class='items-length'>
+              ({{ items | length }})
+            </span>
+          </label>
+        </li>
+        {% endfor %} {% endif %}
+      </ul>
+    </div>
+    <div class="filter-by-condition ">
+      <button class="filter-by-condition-button">
+        <span class="cs-image-container-by-condition"
+          ><img class='down-arrow-conditions' src="/assets/images/down-arrow-7425.svg" />
+          <img class='up-arrow-conditions'src="/assets/images/up-arrow-7425.svg"
+        /></span>
+        Filter by Condition
+      </button>
+      <ul class="filter-conditions">
+        {% if collections.cms %} {% set conditions = collections.cms |
+        groupby("data.condition") %} {% for condition, items in conditions %}
+        <li class="filter-list">
+          <label class="filter-label">
+            <span class='checkbox-filter'>
+              <input type="checkbox" value="{{ condition }}" />
+              <span class='filter-span'>{{ condition }}</span>
+            </span>
+            <span class='items-length'>
+              ({{ items | length }})
+            </span>
+          </label>
+        </li>
+        {% endfor %} {% endif %}
+      </ul>
+    </div>
+  </div>
+  <!-- ============================================ -->
+  <!--                COMPUTER CARDS               -->
+  <!-- ============================================ -->
+
+  <div class="computers-grid">
+    {% if not collections.cms or collections.cms | length == 0 %}
+    <h2>No Computers Available</h2>
+    {% else %} {% for computer in collections.cms %} {% if
+    computer.data.available %}
+    <article
+      class="computer-card"
+      data-brand="{{ computer.data.brand }}"
+      data-type="{{ computer.data.type }}"
+      data-condition="{{ computer.data.condition }}"
+    >
+      {% if computer.data.image %}
+      <picture >
+        <img
+          width='264'
+          height='264'
+          class="computer-img"
+          src="{{ computer.data.image }}"
+          alt="{{ computer.data.brand }} {{ computer.data.model }}"
+          decoding="async"
+          
+        />
+      </picture>
+      {% endif %}
+      <div class="computer-info">
+        <h2 class="computer-title">
+<!--           <span class='data-brand'> {{ computer.data.brand }} </span> -->
+          <span class='data-model'> {{ computer.data.model }} </span>
+        </h2>
+        <ul class="computer-meta">
+          <li class='data-cpu meta-data'>
+            <span class='cpu data-intro'>cpu</span>
+            <span class='cpu-data intro-data'>{{ computer.data.cpu }} </span>
+          </li>
+          <li class='data-ram meta-data'>
+            <span class='ram data-intro'>Ram</span>
+            <span class='ram-data intro-data'>{{ computer.data.ram }} </span>
+          </li>
+          <li class='data-storage meta-data'>
+            <span class='storage data-intro'>Storage</span>
+            <span class='storage-data intro-data'>{{ computer.data.storage }} </span>
+          </li>
+          {% if computer.data.gpu %}
+          <li class='data-gpu meta-data'>
+            <span class='gpu data-intro'>Gpu</span>
+            <span class='gpu-data intro-data'>{{ computer.data.gpu }}</span>
+          </li>
+          {% endif %}
+          <li class='data-type meta-data'>
+            <span class='type data-intro'>Type</span>
+            <span class='type-data intro-data'>{{ computer.data.type }} </span>
+          </li>
+          <li class='data-condition meta-data'>
+            <span class='condition data-intro'>Condition</span>
+            <span class='condition-data intro-data'>{{ computer.data.condition }} </span>
+          </li>
+        </ul>
+        <p class="computer-price meta-data">
+          <span class='data-price'>$</span>
+          <span class='price-data'>{{ computer.data.price }}</span>
+        </p>
+      </div>
+    </article>
+    {% endif %} {% endfor %} {% endif %}
+  </div>
+</section>
+
+{% endblock %}

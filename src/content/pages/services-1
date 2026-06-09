@@ -1,0 +1,126 @@
+---
+title: "Services"
+description: "Meta description for the page"
+preloadImg: "/assets/images/cabinets2.jpg"
+permalink: "services/"
+intro: "Our Services"
+eleventyNavigation:
+  key: Services
+  order: 300
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/services-page.css" />
+{% endblock %} {% block body %}
+<section id="service-page">
+  <div class="cs-container">
+    <div class="cs-content">
+      <h1 class="cs-title">
+        Custom Website Design & Development for Small Businesses
+      </h1>
+      <p class="cs-text">
+        Your competitors' templated websites are costing them sales. While
+        they're losing visitors to slow load times and cookie-cutter designs,
+        your custom-built website will be turning clicks into customers—24 hours
+        a day, 7 days a week.
+      </p>
+    </div>
+    <ul class="cs-cards">
+      <li class="cs-item" id="responsive-design">
+        <div class="cs-paragraph">
+          <h2 class="cs-subtitle">Mobile-first, fully responsive design</h2>
+          <p class="cs-text">
+            More than 60% of customers use phone to make their purchases. Your
+            site looks and works perfectly whether someone's on a phone, tablet,
+            or desktop. You convert mobile visitors into customers while your
+            competitors frustrate them away.
+          </p>
+        </div>
+        <!-- <picture>
+          <img
+            alt="open-laptop"
+            decoding="async"
+            loading="eager"
+            class="cs-laptop"
+            src="/assets/images/custom-code.jpg"
+            width="389"
+            height="218"
+          />
+        </picture> -->
+      </li>
+      <li class="cs-item" id="custom-code">
+        <div class="cs-paragraph">
+          <h2 class="cs-subtitle">100% custom code, no templates</h2>
+          <p class="cs-text">
+            Your website looks nothing like the dozens of template sites your
+            competitors use. Customers instantly recognize you're more
+            professional and established. You create a memorable first
+            impression that builds immediate trust. Your unique design becomes
+            part of your brand identity.
+          </p>
+        </div>
+        <!-- <picture>
+          <img
+            alt="open-laptop"
+            decoding="async"
+            loading="eager"
+            class="cs-laptop"
+            src="/assets/images/custom-code.jpg"
+            width="389"
+            height="218"
+          />
+        </picture> -->
+      </li>
+      <li class="cs-item" id="fast-load-times">
+        <div class="cs-paragraph">
+          <h2 class="cs-subtitle">
+            Lightning-fast load times (under 2 seconds)
+          </h2>
+          <p class="cs-text">
+            40% of visitors abandon sites that take more than 3 seconds to
+            load—you keep those customers. Google ranks faster sites higher,
+            putting you above slower competitors in search results. You appear
+            more credible and trustworthy—slow sites feel sketchy or outdated.
+          </p>
+        </div>
+        <!-- <picture>
+          <img
+            alt="open-laptop"
+            decoding="async"
+            loading="eager"
+            class="cs-laptop"
+            src="/assets/images/custom-code.jpg"
+            width="389"
+            height="218"
+          />
+        </picture> -->
+      </li>
+      <li class="cs-item" id="drives-action">
+        <div class="cs-paragraph">
+          <h2 class="cs-subtitle">Design that drives action</h2>
+          <p class="cs-text">
+            Every button, headline, and image is strategically placed to guide
+            visitors toward contacting you. Clear calls-to-action tell people
+            exactly what to do next (call, book, buy). Your unique value
+            proposition is front and center—visitors instantly understand why
+            they should choose you. Persuasive, benefit-driven content speaks
+            directly to your customers' needs.
+          </p>
+        </div>
+        <!-- <picture>
+          <img
+            alt="open-laptop"
+            decoding="async"
+            loading="eager"
+            class="cs-laptop"
+            src="/assets/images/custom-code.jpg"
+            width="389"
+            height="218"
+          />
+        </picture> -->
+      </li>
+    </ul>
+  </div>
+</section>
+
+{% endblock %}

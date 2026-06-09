@@ -1,0 +1,113 @@
+<section id="cs-contact">
+  <div class="cs-container">
+    <h2 class="cs-title">Get in Touch</h2>
+    <div class="cs-content">
+      <div class="cs-introduction">
+        <h3 class="cs-h3">Tell us what you need</h3>
+        <p class="cs-text">
+          Ready to build something great? Share your vision with us, we respond
+          to every inquiry within 24 hours. Prefer to talk? Give us a call for
+          an immediate chat. If we miss you, expect a callback the same day.
+        </p>
+        <ul class="cs-ul">
+          <li class="cs-li">
+            <span class="cs-header">Call Us</span>
+            <div class="cs-flex">
+              <img
+                aria-hidden="true"
+                focusable="false"
+                class="cs-icon"
+                width="25"
+                height="25"
+                src="../../assets/svgs/phone-grey.svg"
+              />
+              <a class="cs-link" href="tel:{{client.phoneForTel}}"
+                >{{client.phoneForTel}}</a
+              >
+            </div>
+          </li>
+          <li class="cs-li">
+            <span class="cs-header">Shoot Us An Email</span>
+            <div class="cs-flex">
+              <img
+                aria-hidden="true"
+                focusable="false"
+                class="cs-icon"
+                width="25"
+                height="25"
+                src="../../assets/svgs/mail-grey.svg"
+              />
+              <a class="cs-link" href="mailto:{{client.email}}"
+                >{{client.email}}</a
+              >
+            </div>
+          </li>
+          <li class="cs-li">
+            <span class="cs-header">Area Served</span>
+            <div class="cs-flex">
+              <img
+                aria-hidden="true"
+                focusable="false"
+                class="cs-icon"
+                width="25"
+                height="25"
+                src="../../assets/svgs/map-grey.svg"
+              />
+              <span class="cs-link"> {{client.address.country}} </span>
+            </div>
+          </li>
+        </ul>
+        <img src="/assets/svgs/salt-lake-city-1.svg" class="slc" />
+      </div>
+      <form
+        class="cs-form"
+        data-netlify-recaptcha="true"
+        method="post"
+        name="Contact Form"
+      >
+        <h3 class="cs-h3">Make Appointment</h3>
+        <input type="hidden" name="form-name" value="Contact Form" /><label
+          class="cs-label"
+          >Name
+          <input
+            class="cs-input"
+            name="name"
+            placeholder="John Doe"
+            required=""
+            type="text"
+        /></label>
+
+        <label class="cs-label cs-email"
+          >Email
+          <input
+            class="cs-input"
+            name="email"
+            placeholder="johndoe@email.com"
+            required=""
+            type="email"
+        /></label>
+        <label class="cs-label cs-phone"
+          >Phone
+          <input
+            class="cs-input"
+            name="phone"
+            placeholder="012-345-6789"
+            required=""
+            type="tel"
+        /></label>
+        <label class="cs-label"
+          >Message
+          <textarea
+            class="cs-input cs-textarea"
+            name="Message"
+            placeholder="Write message..."
+            required=""
+          ></textarea>
+        </label>
+        <button class="cs-button-solid cs-submit" type="submit">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

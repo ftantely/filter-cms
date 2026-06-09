@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{{ description }}" />
+    <meta name="keywords" content="" />
+    <link rel="canonical" href="{{ client.domain }}{{ page.url }}" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="{{ description }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ client.domain }}{{ page.url }}" />
+    <meta property="og:image" content="/assets/images/oec-transparent" />
+    <meta
+      property="og:image:secure_url"
+      content="/assets/images/oec-transparent"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicons/oec-180x180.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicons/oec-32x32.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x22"
+      href="/assets/favicons/oec-16x16.png"
+    />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Preloads -->
+    <!--     <link rel="preload" as="image" href="/assets/svgs/logo-white.svg" /> -->
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/assets/fonts/roboto-v29-latin-regular.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/assets/fonts/roboto-v29-latin-700.woff2"
+      crossorigin
+    />
+
+    {% if preloadImg != '' %}
+    <link rel="preload" as="image" href="{{ preloadImg }}" />
+    {% endif %}
+
+    <link rel="stylesheet" href="/assets/css/root.css" />
+    <link rel="stylesheet" href="/assets/css/header.css" />
+    <link rel="stylesheet" href="/assets/css/footer.css" />
+    <link rel="stylesheet" href="/assets/css/dark.css" />
+    <link rel="stylesheet" href="/assets/css/hero.css" />
+    <link rel="stylesheet" href="/assets/css/problem-solution.css" />
+    <link rel="stylesheet" href="/assets/css/before.css" />
+    <link rel="stylesheet" href="/assets/css/service-overview.css" />
+    <link rel="stylesheet" href="/assets/css/service-page.css" />
+    <link rel="stylesheet" href="/assets/css/process.css" />
+    <link rel="stylesheet" href="/assets/css/test.css" />
+    <link rel="stylesheet" href="/assets/css/fcta.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/css/commercial-electrical-services.css"
+    />
+    <link rel="stylesheet" href="/assets/css/social-proof.css" />
+    <link rel="stylesheet" href="/assets/css/about-homepage.css" />
+    <link rel="stylesheet" href="/assets/css/social-proof-homepage.css" />
+    <link rel="stylesheet" href="/assets/css/pricing.css" />
+    <link rel="stylesheet" href="/assets/css/portfolio.css" />
+    <link rel="stylesheet" href="/assets/css/price-details.css" />
+    <link rel="stylesheet" href="/assets/css/contact.css" />
+    <link rel="stylesheet" href="/assets/svgs/phone.svg" />
+    <link rel="stylesheet" href="/assets/css/cards.css" />
+
+    <script defer src="/assets/js/dark.js"></script>
+    <script defer src="/assets/js/nav.js"></script>
+    <script defer src="/assets/js/hero.js"></script>
+    <script defer src="/assets/js/filter.js"></script>
+
+    {% block head %}{% endblock %}
+
+    <title>
+      {% if page.url == '/'%} {{ client.title }} | {{ client.name }} | {{
+      client.address.city }}, {{ client.address.state }} {% else %} {{ title }}
+      | {{ client.name }} | {{intro}} {% endif %}
+    </title>
+  </head>
+  <body>
+    <a class="skip" aria-label="skip to main content" href="#main"
+      >Click To Skip To Main Content</a
+    >
+    {% include "components/header.html" %}
+    <main id="main">
+      {% if page.url == '/' %} {% else %} {% include "components/intro.html" %}
+      {% endif %} {% block body %}{% endblock %}
+    </main>
+    {% include "components/footer.html" %}
+    <script defer>
+      document.addEventListener("scroll", (e) => {
+        50 <= document.documentElement.scrollTop
+          ? document.querySelector("body").classList.add("scroll")
+          : document.querySelector("body").classList.remove("scroll");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+@media screen and (min-width: 0) {
+  #portfolio {
+    background-color: var(--clr--primary--100);
+  }
+  #portfolio .cs-container {
+    margin-inline: auto;
+  }
+  #portfolio .cs-container .cs-title {
+    margin-inline: auto;
+    text-align: center;
+  }
+  #portfolio .cs-container .grid-items {
+    max-width: 60rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: var(--sp--cards--gap--medium);
+    margin-inline: auto;
+    justify-items: center;
+  }
+  #portfolio .cs-container .grid-items .cs-item {
+    border: 1px solid var(--clr--secondary--300);
+    border-radius: var(--sp--24);
+    max-width: 29.5rem;
+  }
+  #portfolio .cs-container .grid-items .cs-item .cs-link {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  #portfolio .cs-container .grid-items .cs-item .cs-link .cs-intro {
+    background-color: hsl(43, 97%, 50%);
+    background-image: url("../svgs/ooorganize-3.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: var(--sp--24);
+    border-top-right-radius: var(--sp--24);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #portfolio .cs-container .grid-items .cs-item .cs-link .cs-text {
+    width: 100%;
+    min-width: 100%;
+    display: flex;
+    background-color: var(--clr--primary--150);
+    margin-inline: auto;
+    text-align: center;
+    padding: 1.5rem;
+    border-bottom-left-radius: var(--sp--24);
+    border-bottom-right-radius: var(--sp--24);
+    margin-block-end: 0;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  #portfolio .cs-container .grid-items .cs-item .cs-link .cs-text .cs-text-item {
+    margin-inline: auto;
+    margin-top: 50px;
+    padding-inline: var(--sp--cards--padding);
+    padding-block-end: var(--sp--cards--padding);
+    border-radius: var(--sp--24);
+    border: 1px solid var(--clr--secondary--300);
+  }
+  #portfolio .cs-container .grid-items .cs-item .cs-link .cs-text .cs-text-item #svg {
+    margin-block-start: -3.375rem;
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: var(--clr--primary--150);
+    border-radius: 1.5rem;
+  }
+  #portfolio .cs-container .grid-items .cs-item .cs-link .cs-text .cs-text-item .cs-subtitle {
+    text-align: center;
+    margin-block-end: 1.5rem;
+  }
+  #portfolio .cs-container .grid-items .cs-item .cs-link .cs-text .cs-text-item .cs-text {
+    display: block;
+    color: var(--clr--secondary--300);
+    font-weight: var(--fw--500);
+    max-width: 23rem;
+  }
+  #portfolio .cs-container .grid-items .cs-item .cs-link .cs-text .cs-text-item .cs-span {
+    display: block;
+  }
+  #portfolio .cs-container .grid-items .cs-item:hover {
+    cursor: pointer;
+  }
+  #portfolio .cs-container .grid-items .cs-item:hover .cs-link .cs-text {
+    color: var(--clr--primary--100);
+  }
+  #portfolio .cs-container .grid-items .cs-item:hover .cs-link .cs-text .cs-text-item .cs-h3,
+  #portfolio .cs-container .grid-items .cs-item:hover .cs-link .cs-text .cs-text-item .cs-span {
+    color: var(--clr--primary--100);
+  }
+  #portfolio .cs-container .grid-items .cs-item:hover .cs-link .cs-svg {
+    border-color: var(--clr--primary--100);
+  }
+  #portfolio .cs-container .grid-items .cs-item:hover .cs-link .cs-svg img {
+    filter: grayscale(0%) brightness(500%);
+  }
+}
+@media screen and (width >= 768px) {
+  #portfolio .cs-container .grid-items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 0) {
+  body.dark-mode #portfolio .cs-container .cs-item {
+    border-color: var(--clr--secondary--200);
+  }
+  body.dark-mode #portfolio .cs-container .cs-item .cs-text-item {
+    border-color: var(--clr--secondary--200) !important;
+  }
+}

@@ -1,0 +1,131 @@
+/* PAGE-SPECIFIC STYLES FOR THE REVIEWS PAGE */
+
+/*-- -------------------------- -->
+<---           Reviews          -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #cs-reviews {
+    .cs-container {
+      .cs-content {
+        .cs-title {
+          text-align: center;
+          margin-inline: auto;
+        }
+      }
+      .cs-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: var(--medium-gap);
+        justify-items: center;
+        .cs-items {
+          display: flex;
+          flex-direction: column;
+          justify-items: start;
+
+          max-width: 41rem;
+          background-color: var(--secondary-180);
+
+          .cs-profile {
+            display: flex;
+            flex-direction: row;
+            column-gap: 15px;
+            margin-block-end: 0.5rem;
+            align-items: center;
+            .cs-image {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              max-width: 70px;
+              max-height: 70px;
+              .google-profile {
+                height: 100%;
+                width: 100%;
+                padding: 0px;
+                display: inline-block;
+              }
+            }
+            .cs-text {
+              display: inline-block;
+            }
+          }
+          .rating {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-block-end: -7px;
+            .cs-subtitle {
+              display: inline-block;
+              margin-block: 0px;
+              margin-inline-end: 0.5rem;
+            }
+            .five-stars {
+              max-width: 150px;
+              height: 40px;
+              padding: 0px;
+              display: inline-block;
+            }
+          }
+          .date {
+            display: inline-block;
+            max-width: 200px;
+            font-size: 0.7rem;
+            color: var(--clr--secondary--300);
+            margin-block-end: 0.75rem;
+          }
+          .cs-text {
+            margin-block-end: 0px;
+          }
+          .google-logo {
+            background-color: var(--secondary-180);
+            height: 50px;
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (width>=768px) {
+  #cs-reviews {
+    .cs-container {
+      margin-inline: auto;
+      .cs-content {
+      }
+      .cs-cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode {
+    #cs-reviews {
+      .cs-container {
+        .cs-cards {
+          .cs-items {
+            background-color: var(--dark);
+            border: 1px solid var(--secondary-375);
+            .rating {
+              .cs-subtitle {
+                color: var(--clr--primary--100);
+              }
+            }
+            .date {
+              color: var(--secondary-185);
+            }
+            .google-logo {
+              background-color: var(--dark);
+            }
+          }
+        }
+      }
+    }
+  }
+}

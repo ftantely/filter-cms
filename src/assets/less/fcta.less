@@ -1,0 +1,33 @@
+@media only screen and (min-width: 0rem) {
+  #fcta {
+    background-color: var(--clr--primary--150);
+
+    .cs-container {
+      align-items: stretch;
+      .cs-title {
+        margin-block-end: 0;
+      }
+      .cs-button-solid-accent {
+        max-width: (164/16rem);
+        align-self: center;
+        &:before {
+        }
+        &:hover {
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 0rem) {
+  body.dark-mode {
+    #fcta {
+      .cs-container {
+        .slc {
+          filter: brightness(0) saturate(100%) invert(54%) sepia(6%)
+            saturate(346%) hue-rotate(163deg) brightness(44%) contrast(88%);
+        }
+      }
+    }
+  }
+}

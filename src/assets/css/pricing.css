@@ -1,0 +1,270 @@
+@media screen and (min-width: 0) {
+  #pricing {
+    background-color: var(--clr--primary--100);
+  }
+  #pricing .cs-container .cs-title {
+    text-align: center;
+    margin-inline: auto;
+  }
+  #pricing .cs-container .cs-cards {
+    display: grid;
+    padding-block: 24px;
+    gap: var(--sp--cards--gap--medium);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: minmax(auto, 29.5rem);
+    justify-content: center;
+  }
+  #pricing .cs-container .cs-cards .cs-item-one {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr--secondary--300);
+    padding: var(--sp--cards--padding);
+    border: 1px solid var(--clr--accent--300);
+    border-radius: 24px;
+    row-gap: 24px;
+  }
+  #pricing .cs-container .cs-cards .cs-item-one .cs-content {
+    flex-direction: column;
+    row-gap: var(--sp--list--gap);
+  }
+  #pricing .cs-container .cs-cards .cs-item-one .cs-content span {
+    display: block;
+  }
+  #pricing .cs-container .cs-cards .cs-item-one .cs-content .subscription-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #pricing .cs-container .cs-cards .cs-item-one .cs-content .subscription-container .subscription {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+  #pricing .cs-container .cs-cards .cs-item-one .cs-content .subscription-container .popular {
+    background-color: var(--clr--accent--300);
+    transform: rotate(30deg);
+    padding-inline: 0.75rem;
+    text-transform: uppercase;
+    font-weight: var(--fw--700);
+    font-size: 0.75rem;
+    border-radius: 1.5rem;
+    color: var(--clr--primary--100--constant);
+  }
+  #pricing .cs-container .cs-cards .cs-item-one .cs-content .monthly {
+    text-transform: uppercase;
+    font-weight: var(--fw--700);
+    color: var(--clr--primary--100--constant);
+    display: block;
+  }
+  #pricing .cs-container .cs-cards .cs-item-one .cs-content .budget {
+    color: var(--clr--primary--175);
+  }
+  #pricing .cs-container .cs-cards .cs-item-one .cs-content .one-fifty {
+    font-size: 4rem;
+    font-weight: var(--fw--700);
+    color: var(--clr--primary--100--constant);
+    width: 100%;
+    line-height: 1;
+    text-align: center;
+    margin-top: 4rem;
+  }
+  #pricing .cs-container .cs-cards .cs-item-one .cs-content .per-month {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: var(--fw--700);
+    color: var(--clr--primary--175);
+  }
+  #pricing .cs-container .cs-cards .cs-item-one .cs-button-solid {
+    display: block;
+    justify-self: center;
+    background-color: var(--clr--accent--300);
+    color: var(--clr--primary--100--constant);
+  }
+  #pricing .cs-container .cs-cards .cs-item-one .cs-ul-1 .free-features {
+    text-transform: uppercase;
+    font-weight: var(--fw--700);
+    color: var(--clr--primary--100--constant);
+    display: block;
+    margin-block-end: 1rem;
+  }
+  #pricing .cs-container .cs-cards .cs-item-one .cs-ul-1 .cs-item-1 {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--sp--icon--md--gap);
+    margin-block-end: var(--sp--list--gap);
+    color: var(--clr--primary--175);
+  }
+  #pricing .cs-container .cs-cards .cs-item-one .cs-ul-1 .cs-item-1 .check {
+    height: var(--sp--24);
+    width: var(--sp--24);
+    border-radius: 50%;
+    background-color: var(--clr--accent--300);
+    padding: 4px;
+    filter: brightness(0) invert(1);
+  }
+  #pricing .cs-container .cs-cards .cs-item-one .cs-ul-2 .add-ons {
+    text-transform: uppercase;
+    font-weight: var(--fw--700);
+    color: var(--clr--primary--100--constant);
+    display: block;
+    margin-block-end: 1rem;
+  }
+  #pricing .cs-container .cs-cards .cs-item-one .cs-ul-2 .cs-item-1 {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--sp--icon--md--gap);
+    margin-block-end: var(--sp--list--gap);
+    color: var(--clr--primary--175);
+  }
+  #pricing .cs-container .cs-cards .cs-item-one .cs-ul-2 .cs-item-1 .check {
+    height: var(--sp--24);
+    width: var(--sp--24);
+    border-radius: 50%;
+    padding: 4px;
+  }
+  #pricing .cs-container .cs-cards .cs-item-one .decoration {
+    grid-row-start: 12;
+    grid-row-end: 13;
+    display: block;
+    border-bottom: 6px solid var(--clr--accent--300);
+    border-inline: 6px solid var(--clr--accent--300);
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    max-height: 56%;
+  }
+  #pricing .cs-container .cs-cards .cs-item-two {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr--primary--150);
+    padding: var(--sp--cards--padding);
+    border: 1px solid var(--clr--secondary--300);
+    border-radius: 24px;
+    row-gap: 24px;
+  }
+  #pricing .cs-container .cs-cards .cs-item-two .cs-content {
+    flex-direction: column;
+    row-gap: var(--sp--list--gap);
+  }
+  #pricing .cs-container .cs-cards .cs-item-two .cs-content span {
+    display: block;
+  }
+  #pricing .cs-container .cs-cards .cs-item-two .cs-content .one-time-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #pricing .cs-container .cs-cards .cs-item-two .cs-content .one-time-container .one-time {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+  #pricing .cs-container .cs-cards .cs-item-two .cs-content .one-time-container .popular {
+    background-color: var(--clr--accent--300);
+    transform: rotate(30deg);
+    padding-inline: 0.75rem;
+    text-transform: uppercase;
+    font-weight: var(--fw--700);
+    font-size: 0.75rem;
+    border-radius: 1.5rem;
+    color: var(--clr--primary--100);
+  }
+  #pricing .cs-container .cs-cards .cs-item-two .cs-content .lump-sum {
+    text-transform: uppercase;
+    font-weight: var(--fw--700);
+    color: var(--clr--secondary--300);
+    display: block;
+  }
+  #pricing .cs-container .cs-cards .cs-item-two .cs-content .own-it {
+    color: var(--body-dark--txt--clr);
+  }
+  #pricing .cs-container .cs-cards .cs-item-two .cs-content .thirty-five {
+    font-size: 4rem;
+    font-weight: var(--fw--700);
+    color: var(--clr--secondary--300);
+    width: 100%;
+    line-height: 1;
+    text-align: center;
+    margin-top: 4rem;
+  }
+  #pricing .cs-container .cs-cards .cs-item-two .cs-content .one-payment {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: var(--fw--700);
+    color: var(--body-dark--txt--clr);
+  }
+  #pricing .cs-container .cs-cards .cs-item-two .cs-button-solid {
+    display: block;
+    justify-self: center;
+    cursor: pointer;
+  }
+  #pricing .cs-container .cs-cards .cs-item-two .cs-ul-1 .free-features {
+    text-transform: uppercase;
+    font-weight: var(--fw--700);
+    color: var(--clr--secondary--300);
+    display: block;
+    margin-block-end: 1rem;
+  }
+  #pricing .cs-container .cs-cards .cs-item-two .cs-ul-1 .cs-item-1 {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--sp--icon--md--gap);
+    margin-block-end: var(--sp--list--gap);
+    color: var(--body-dark--txt--clr);
+  }
+  #pricing .cs-container .cs-cards .cs-item-two .cs-ul-1 .cs-item-1 .check {
+    height: var(--sp--24);
+    width: var(--sp--24);
+    border-radius: 50%;
+    background-color: var(--clr--accent--300);
+    padding: 4px;
+  }
+  #pricing .cs-container .cs-cards .cs-item-two .cs-ul-2 .add-ons {
+    text-transform: uppercase;
+    font-weight: var(--fw--700);
+    color: var(--clr--secondary--300);
+    display: block;
+    margin-block-end: 1rem;
+  }
+  #pricing .cs-container .cs-cards .cs-item-two .cs-ul-2 .cs-item-1 {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--sp--icon--md--gap);
+    margin-block-end: var(--sp--list--gap);
+    color: var(--body-dark--txt--clr);
+  }
+  #pricing .cs-container .cs-cards .cs-item-two .cs-ul-2 .cs-item-1 .check {
+    height: var(--sp--24);
+    width: var(--sp--24);
+    border-radius: 50%;
+    background-color: var(--clr--accent--300);
+    padding: 4px;
+  }
+  #pricing .cs-container .cs-cards .cs-item-two .decoration {
+    grid-row-start: 12;
+    grid-row-end: 13;
+    display: block;
+    border-bottom: 6px solid var(--clr--accent--300);
+    border-inline: 6px solid var(--clr--accent--300);
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    max-height: 56%;
+  }
+}
+/*----768px----*/
+@media only screen and (min-width: 48rem) {
+  #pricing .cs-container .cs-cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #pricing .cs-container .cs-cards .cs-item-two {
+    border-color: var(--clr--secondary--200);
+  }
+  body.dark-mode #pricing .cs-container .cs-cards .cs-item-two .lump-sum,
+  body.dark-mode #pricing .cs-container .cs-cards .cs-item-two .thirty-five,
+  body.dark-mode #pricing .cs-container .cs-cards .cs-item-two .free-features,
+  body.dark-mode #pricing .cs-container .cs-cards .cs-item-two .add-ons,
+  body.dark-mode #pricing .cs-container .cs-cards .cs-item-two .add-ons {
+    color: var(--clr--primary--100--constant);
+  }
+}
