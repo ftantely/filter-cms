@@ -102,8 +102,7 @@ eleventyNavigation:
   <div class="computers-grid">
     {% if not collections.cms or collections.cms | length == 0 %}
     <h2>No Computers Available</h2>
-    {% else %} {% for computer in collections.cms %} {% if
-    computer.data.available %}
+    {% else %} {% for computer in collections.cms %}
     <article
       class="computer-card"
       data-brand="{{ computer.data.brand }}"
@@ -162,7 +161,7 @@ eleventyNavigation:
         </p>
       </div>
     </article>
-    {% endif %} {% endfor %} {% endif %}
+  {% endfor %} {% endif %}
   </div>
 </section>
 
