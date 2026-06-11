@@ -280,6 +280,7 @@
     border: 1px solid var(--clr--primary--165);
   }
   .computers-section .computers-grid .computer-card .computer-img {
+    justify-self: center;
     object-fit: cover;
     display: block;
     border-radius: 1.5rem;
@@ -306,7 +307,7 @@
   .computers-section .computers-grid .computer-card .computer-info .computer-title .data-model {
     font-size: var(--fs--body);
     line-height: 1.5em;
-    max-width: 12.5rem;
+    max-width: 18.75rem;
     display: block;
   }
   .computers-section .computers-grid .computer-card .computer-info .computer-meta {
