@@ -268,13 +268,11 @@
     flex-wrap: wrap;
     margin-inline: auto;
     gap: 1rem;
-    background-color: red;
     max-width: 50rem;
   }
   .computers-section .computers-grid .card-container {
     flex: 1;
     max-width: 60rem;
-    background-color: green;
     display: flex;
     justify-content: center;
   }
@@ -655,16 +653,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
-    background-color: skyblue;
   }
   .computers-section .computers-grid .card-container {
-    background-color: green;
     display: flex;
     justify-content: center;
   }
   .computers-section .computers-grid .card-container .computer-card {
     background-color: var(--clr--primary--150);
-    max-width: 24.25rem;
+    min-width: 24.25rem;
     border-radius: 1.5rem;
     display: flex;
     flex-direction: column;
