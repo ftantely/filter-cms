@@ -279,8 +279,11 @@
     gap: 2rem;
     border: 1px solid var(--clr--primary--165);
   }
-  .computers-section .computers-grid .computer-card .computer-img {
-    justify-self: center;
+  .computers-section .computers-grid .computer-card picture {
+    align-self: center;
+  }
+  .computers-section .computers-grid .computer-card picture .computer-img {
+    align-self: center;
     object-fit: cover;
     display: block;
     border-radius: 1.5rem;
