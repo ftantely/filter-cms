@@ -64,7 +64,7 @@ allCheckbox.addEventListener("change", () => {
     checkboxes.forEach((cb) => {
       if (cb.value !== "all") cb.checked = false;
     });
-    cards.forEach((card) => (card.style.display = "block"));
+    cards.forEach((card) => (card.style.display = "flex"));
   } else {
     allCheckbox.checked = true;
   }

@@ -275,6 +275,7 @@
     border-radius: 1.5rem;
     display: flex;
     flex-direction: column;
+    flex: 1;
     padding: var(--sp--cards--padding);
     gap: 2rem;
     border: 1px solid var(--clr--primary--165);
