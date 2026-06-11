@@ -103,64 +103,66 @@ eleventyNavigation:
     {% if not collections.cms or collections.cms | length == 0 %}
     <h2>No Computers Available</h2>
     {% else %} {% for computer in collections.cms %}
-    <article
-      class="computer-card"
-      data-brand="{{ computer.data.brand }}"
-      data-type="{{ computer.data.type }}"
-      data-condition="{{ computer.data.condition }}"
-    >
-      {% if computer.data.image %}
-      <picture >
-        <img
-          width='264'
-          height='264'
-          class="computer-img"
-          src="{{ computer.data.image }}"
-          alt="{{ computer.data.brand }} {{ computer.data.model }}"
-          decoding="async"
-          
-        />
-      </picture>
-      {% endif %}
-      <div class="computer-info">
-        <h2 class="computer-title">
-          <span class='data-brand'> {{ computer.data.brand }} </span>
-          <span class='data-model'> {{ computer.data.model }} </span>
-        </h2>
-        <ul class="computer-meta">
-          <li class='data-cpu meta-data'>
-            <span class='cpu data-intro'>cpu:</span>
-            <span class='cpu-data intro-data'>{{ computer.data.cpu }} </span>
-          </li>
-          <li class='data-ram meta-data'>
-            <span class='ram data-intro'>Ram:</span>
-            <span class='ram-data intro-data'>{{ computer.data.ram }} </span>
-          </li>
-          <li class='data-storage meta-data'>
-            <span class='storage data-intro'>Storage:</span>
-            <span class='storage-data intro-data'>{{ computer.data.storage }} </span>
-          </li>
-          {% if computer.data.gpu %}
-          <li class='data-gpu meta-data'>
-            <span class='gpu data-intro'>Gpu:</span>
-            <span class='gpu-data intro-data'>{{ computer.data.gpu }}</span>
-          </li>
-          {% endif %}
-          <li class='data-type meta-data'>
-            <span class='type data-intro'>Type:</span>
-            <span class='type-data intro-data'>{{ computer.data.type }} </span>
-          </li>
-          <li class='data-condition meta-data'>
-            <span class='condition data-intro'>Condition:</span>
-            <span class='condition-data intro-data'>{{ computer.data.condition }} </span>
-          </li>
-        </ul>
-        <p class="computer-price meta-data">
-          <span class='data-price'>$</span>
-          <span class='price-data'>{{ computer.data.price }}</span>
-        </p>
-      </div>
-    </article>
+   <div class='card-container'>
+     <article
+       class="computer-card"
+       data-brand="{{ computer.data.brand }}"
+       data-type="{{ computer.data.type }}"
+       data-condition="{{ computer.data.condition }}"
+     >
+       {% if computer.data.image %}
+       <picture >
+         <img
+           width='264'
+           height='264'
+           class="computer-img"
+           src="{{ computer.data.image }}"
+           alt="{{ computer.data.brand }} {{ computer.data.model }}"
+           decoding="async"
+         
+         />
+       </picture>
+       {% endif %}
+       <div class="computer-info">
+         <h2 class="computer-title">
+           <span class='data-brand'> {{ computer.data.brand }} </span>
+           <span class='data-model'> {{ computer.data.model }} </span>
+         </h2>
+         <ul class="computer-meta">
+           <li class='data-cpu meta-data'>
+             <span class='cpu data-intro'>cpu:</span>
+             <span class='cpu-data intro-data'>{{ computer.data.cpu }} </span>
+           </li>
+           <li class='data-ram meta-data'>
+             <span class='ram data-intro'>Ram:</span>
+             <span class='ram-data intro-data'>{{ computer.data.ram }} </span>
+           </li>
+           <li class='data-storage meta-data'>
+             <span class='storage data-intro'>Storage:</span>
+             <span class='storage-data intro-data'>{{ computer.data.storage }} </span>
+           </li>
+           {% if computer.data.gpu %}
+           <li class='data-gpu meta-data'>
+             <span class='gpu data-intro'>Gpu:</span>
+             <span class='gpu-data intro-data'>{{ computer.data.gpu }}</span>
+           </li>
+           {% endif %}
+           <li class='data-type meta-data'>
+             <span class='type data-intro'>Type:</span>
+             <span class='type-data intro-data'>{{ computer.data.type }} </span>
+           </li>
+           <li class='data-condition meta-data'>
+             <span class='condition data-intro'>Condition:</span>
+             <span class='condition-data intro-data'>{{ computer.data.condition }} </span>
+           </li>
+         </ul>
+         <p class="computer-price meta-data">
+           <span class='data-price'>$</span>
+           <span class='price-data'>{{ computer.data.price }}</span>
+         </p>
+       </div>
+     </article>
+   </div>
   {% endfor %} {% endif %}
   </div>
 </section>
