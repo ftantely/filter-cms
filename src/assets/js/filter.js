@@ -39,7 +39,9 @@ function filterCards() {
     checkedConditions.length === 0
   ) {
     allCheckbox.checked = true;
-    cards.forEach((card) => (card.style.display = "flex"));
+    cards.forEach(
+      (card) => (card.closest(".card-container").style.display = "flex"),
+    );
     return;
   }
 
@@ -53,7 +55,7 @@ function filterCards() {
       checkedConditions.includes(card.dataset.condition);
 
     // AND logic between groups — card must match all selected groups
-    card.style.display =
+    card.closest(".card-container").style.display =
       brandMatch && typeMatch && conditionMatch ? "flex" : "none";
   });
 }
@@ -64,7 +66,9 @@ allCheckbox.addEventListener("change", () => {
     checkboxes.forEach((cb) => {
       if (cb.value !== "all") cb.checked = false;
     });
-    cards.forEach((card) => (card.style.display = "flex"));
+    cards.forEach(
+      (card) => (card.closest(".card-container").style.display = "flex"),
+    );
   } else {
     allCheckbox.checked = true;
   }
