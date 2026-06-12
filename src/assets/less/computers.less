@@ -688,8 +688,9 @@
     }
     .computers-grid {
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+      //flex-direction: row;
+      flex-direction: column;
+      //flex-wrap: wrap;
       gap: 1rem;
       .card-container {
         display: flex;
@@ -698,12 +699,14 @@
         .computer-card {
           background-color: var(--clr--primary--150);
           min-width: (388/16rem);
+          max-width: 100%;
           border-radius: 1.5rem;
           display: flex;
-          flex-direction: column;
+          //flex-direction: column;
+          flex-direction: row;
           flex: 1;
           padding: var(--sp--cards--padding);
-          gap: 2rem;
+          gap: 3rem;
           border: 1px solid var(--clr--primary--165);
           picture {
             align-self: center;
