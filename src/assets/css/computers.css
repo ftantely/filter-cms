@@ -383,7 +383,7 @@
 }
 @media only screen and (min-width: 51.25rem) {
   .computers-section .filters {
-    max-width: 25rem;
+    max-width: 50rem;
     display: flex;
     flex-direction: column;
     row-gap: var(--sp--li-vert-gap);
