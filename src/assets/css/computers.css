@@ -75,25 +75,28 @@
     opacity: 1;
     transition: opacity 0.3s;
   }
-  .computers-section .filters .filter-by-brand .filter-brands {
+  .computers-section .filters .filter-by-brand .brands-collection {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    margin-left: var(--sp--icon--md--gap);
+    grid-template-rows: 1fr;
     transition: grid-template-rows 0.3s;
   }
-  .computers-section .filters .filter-by-brand .filter-brands .filter-list {
+  .computers-section .filters .filter-by-brand .brands-collection .filter-brands {
+    overflow: hidden;
+    margin-left: var(--sp--icon--md--gap);
+  }
+  .computers-section .filters .filter-by-brand .brands-collection .filter-brands .filter-list {
     overflow: hidden;
   }
-  .computers-section .filters .filter-by-brand .filter-brands .filter-list .filter-label {
+  .computers-section .filters .filter-by-brand .brands-collection .filter-brands .filter-list .filter-label {
     display: flex;
     justify-content: space-between;
   }
-  .computers-section .filters .filter-by-brand .filter-brands .filter-list .filter-label .checkbox-filter {
+  .computers-section .filters .filter-by-brand .brands-collection .filter-brands .filter-list .filter-label .checkbox-filter {
     display: flex;
     gap: 0.625rem;
     align-items: center;
   }
-  .computers-section .filters .filter-by-brand .filter-brands .filter-list .filter-label .checkbox-filter input[type="checkbox"] {
+  .computers-section .filters .filter-by-brand .brands-collection .filter-brands .filter-list .filter-label .checkbox-filter input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
     padding: 2px;
@@ -103,10 +106,10 @@
     border-radius: 3px;
     cursor: pointer;
   }
-  .computers-section .filters .filter-by-brand .filter-brands .filter-list .filter-label .checkbox-filter input[type="checkbox"]:checked {
+  .computers-section .filters .filter-by-brand .brands-collection .filter-brands .filter-list .filter-label .checkbox-filter input[type="checkbox"]:checked {
     background-color: var(--clr--secondary--300);
   }
-  .computers-section .filters .filter-by-brand .filter-brands .filter-list .filter-label .checkbox-filter input[type="checkbox"]:checked::after {
+  .computers-section .filters .filter-by-brand .brands-collection .filter-brands .filter-list .filter-label .checkbox-filter input[type="checkbox"]:checked::after {
     content: "";
     display: block;
     width: 100%;
@@ -148,25 +151,25 @@
     opacity: 1;
     transition: opacity 0.3s;
   }
-  .computers-section .filters .filter-by-type .filter-types {
+  .computers-section .filters .filter-by-type .types-collection {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    margin-left: var(--sp--icon--md--gap);
+    grid-template-rows: 1fr;
     transition: grid-template-rows 0.3s;
   }
-  .computers-section .filters .filter-by-type .filter-types .filter-list {
+  .computers-section .filters .filter-by-type .types-collection .filter-types {
     overflow: hidden;
+    margin-left: var(--sp--icon--md--gap);
   }
-  .computers-section .filters .filter-by-type .filter-types .filter-list .filter-label {
+  .computers-section .filters .filter-by-type .types-collection .filter-types .filter-list .filter-label {
     display: flex;
     justify-content: space-between;
   }
-  .computers-section .filters .filter-by-type .filter-types .filter-list .filter-label .checkbox-filter {
+  .computers-section .filters .filter-by-type .types-collection .filter-types .filter-list .filter-label .checkbox-filter {
     display: flex;
     gap: 0.625rem;
     align-items: center;
   }
-  .computers-section .filters .filter-by-type .filter-types .filter-list .filter-label .checkbox-filter input[type="checkbox"] {
+  .computers-section .filters .filter-by-type .types-collection .filter-types .filter-list .filter-label .checkbox-filter input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
     padding: 2px;
@@ -176,10 +179,10 @@
     border-radius: 3px;
     cursor: pointer;
   }
-  .computers-section .filters .filter-by-type .filter-types .filter-list .filter-label .checkbox-filter input[type="checkbox"]:checked {
+  .computers-section .filters .filter-by-type .types-collection .filter-types .filter-list .filter-label .checkbox-filter input[type="checkbox"]:checked {
     background-color: var(--clr--secondary--300);
   }
-  .computers-section .filters .filter-by-type .filter-types .filter-list .filter-label .checkbox-filter input[type="checkbox"]:checked::after {
+  .computers-section .filters .filter-by-type .types-collection .filter-types .filter-list .filter-label .checkbox-filter input[type="checkbox"]:checked::after {
     content: "";
     display: block;
     width: 100%;
@@ -221,25 +224,28 @@
     opacity: 1;
     transition: opacity 0.3s;
   }
-  .computers-section .filters .filter-by-condition .filter-conditions {
+  .computers-section .filters .filter-by-condition .conditions-collection {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    margin-left: var(--sp--icon--md--gap);
+    grid-template-rows: 1fr;
     transition: grid-template-rows 0.3s;
   }
-  .computers-section .filters .filter-by-condition .filter-conditions .filter-list {
+  .computers-section .filters .filter-by-condition .conditions-collection .filter-conditions {
+    overflow: hidden;
+    margin-left: var(--sp--icon--md--gap);
+  }
+  .computers-section .filters .filter-by-condition .conditions-collection .filter-conditions .filter-list {
     overflow: hidden;
   }
-  .computers-section .filters .filter-by-condition .filter-conditions .filter-list .filter-label {
+  .computers-section .filters .filter-by-condition .conditions-collection .filter-conditions .filter-list .filter-label {
     display: flex;
     justify-content: space-between;
   }
-  .computers-section .filters .filter-by-condition .filter-conditions .filter-list .filter-label .checkbox-filter {
+  .computers-section .filters .filter-by-condition .conditions-collection .filter-conditions .filter-list .filter-label .checkbox-filter {
     display: flex;
     gap: 0.625rem;
     align-items: center;
   }
-  .computers-section .filters .filter-by-condition .filter-conditions .filter-list .filter-label .checkbox-filter input[type="checkbox"] {
+  .computers-section .filters .filter-by-condition .conditions-collection .filter-conditions .filter-list .filter-label .checkbox-filter input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
     padding: 2px;
@@ -249,10 +255,10 @@
     border-radius: 3px;
     cursor: pointer;
   }
-  .computers-section .filters .filter-by-condition .filter-conditions .filter-list .filter-label .checkbox-filter input[type="checkbox"]:checked {
+  .computers-section .filters .filter-by-condition .conditions-collection .filter-conditions .filter-list .filter-label .checkbox-filter input[type="checkbox"]:checked {
     background-color: var(--clr--secondary--300);
   }
-  .computers-section .filters .filter-by-condition .filter-conditions .filter-list .filter-label .checkbox-filter input[type="checkbox"]:checked::after {
+  .computers-section .filters .filter-by-condition .conditions-collection .filter-conditions .filter-list .filter-label .checkbox-filter input[type="checkbox"]:checked::after {
     content: "";
     display: block;
     width: 100%;
@@ -353,11 +359,8 @@
   .active-brand .filters .filter-by-brand .filter-by-brand-button .cs-image-container-by-brand .up-arrow-brands {
     opacity: 0;
   }
-  .active-brand .filters .filter-by-brand .filter-brands {
-    grid-template-rows: 0fr 0fr;
-  }
-  .active-brand .filters .filter-by-brand .filter-brands .filter-list {
-    overflow: hidden;
+  .active-brand .filters .filter-by-brand .brands-collection {
+    grid-template-rows: 0;
   }
   .active-type .filters .filter-by-type .filter-by-type-button .cs-image-container-by-type .down-arrow-types {
     opacity: 1;
@@ -365,11 +368,8 @@
   .active-type .filters .filter-by-type .filter-by-type-button .cs-image-container-by-type .up-arrow-types {
     opacity: 0;
   }
-  .active-type .filters .filter-by-type .filter-types {
-    grid-template-rows: 0fr 0fr;
-  }
-  .active-type .filters .filter-by-type .filter-types .filter-list {
-    overflow: hidden;
+  .active-type .filters .filter-by-type .types-collection {
+    grid-template-rows: 0;
   }
   .active-condition .filters .filter-by-condition .filter-by-condition-button .cs-image-container-by-condition .down-arrow-conditions {
     opacity: 1;
@@ -377,11 +377,8 @@
   .active-condition .filters .filter-by-condition .filter-by-condition-button .cs-image-container-by-condition .up-arrow-conditions {
     opacity: 0;
   }
-  .active-condition .filters .filter-by-condition .filter-conditions {
-    grid-template-rows: 0fr 0fr;
-  }
-  .active-condition .filters .filter-by-condition .filter-conditions .filter-list {
-    overflow: hidden;
+  .active-condition .filters .filter-by-condition .conditions-collection {
+    grid-template-rows: 0;
   }
 }
 @media only screen and (min-width: 51.25rem) {

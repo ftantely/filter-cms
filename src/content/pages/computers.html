@@ -27,22 +27,24 @@ eleventyNavigation:
         /></span>
         Filter by Brand
       </button>
-      <ul class="filter-brands filter-collections">
-        {% if collections.cms %} {% set brands = collections.cms |
-        groupby("data.brand") %} {% for brand, items in brands %}
-        <li class="filter-list">
-          <label class="filter-label">
+      <div class="brands-collection">
+        <ul class="filter-brands filter-collections">
+          {% if collections.cms %} {% set brands = collections.cms |
+          groupby("data.brand") %} {% for brand, items in brands %}
+          <li class="filter-list">
+            <label class="filter-label">
             <span class='checkbox-filter'>
               <input type="checkbox" value="{{ brand }}" />
               <span class='filter-span'>{{ brand }}</span>
             </span>
-            <span class='items-length'>
+              <span class='items-length'>
               ({{ items | length }})
             </span>
-          </label>
-        </li>
-        {% endfor %} {% endif %}
-      </ul>
+            </label>
+          </li>
+          {% endfor %} {% endif %}
+        </ul>
+      </div>
     </div>
     <div class="filter-by-type">
       <button class="filter-by-type-button">
@@ -52,7 +54,8 @@ eleventyNavigation:
         /></span>
         Filter by Type
       </button>
-      <ul class="filter-types">
+      <div class='types-collection'>
+        <ul class="filter-types">
         {% if collections.cms %} {% set types = collections.cms |
         groupby("data.type") %} {% for type, items in types %}
         <li class="filter-list">
@@ -68,6 +71,7 @@ eleventyNavigation:
         </li>
         {% endfor %} {% endif %}
       </ul>
+      </div>
     </div>
     <div class="filter-by-condition ">
       <button class="filter-by-condition-button">
@@ -77,22 +81,24 @@ eleventyNavigation:
         /></span>
         Filter by Condition
       </button>
-      <ul class="filter-conditions">
-        {% if collections.cms %} {% set conditions = collections.cms |
-        groupby("data.condition") %} {% for condition, items in conditions %}
-        <li class="filter-list">
-          <label class="filter-label">
+      <div class='conditions-collection'>
+        <ul class="filter-conditions">
+          {% if collections.cms %} {% set conditions = collections.cms |
+          groupby("data.condition") %} {% for condition, items in conditions %}
+          <li class="filter-list">
+            <label class="filter-label">
             <span class='checkbox-filter'>
               <input type="checkbox" value="{{ condition }}" />
               <span class='filter-span'>{{ condition }}</span>
             </span>
-            <span class='items-length'>
+              <span class='items-length'>
               ({{ items | length }})
             </span>
-          </label>
-        </li>
-        {% endfor %} {% endif %}
-      </ul>
+            </label>
+          </li>
+          {% endfor %} {% endif %}
+        </ul>
+      </div>
     </div>
   </div>
   <!-- ============================================ -->
