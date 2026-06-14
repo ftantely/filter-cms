@@ -6,6 +6,6 @@ ram: 8GB DDR4 RAM (Upgradeable)
 storage: 256GB SSD (Upgradeable)
 condition: Refurbished
 type: All-in-One
-image: /assets/images/cms/screenshot_2026-06-14_at_5.15.09_pm-removebg-preview.png
+image: /assets/images/cms/delll.png
 price: "550.00"
 ---
