@@ -119,13 +119,10 @@ eleventyNavigation:
        {% if computer.data.image %}
        <picture >
          <img
-           width='264'
-           height='264'
            class="computer-img"
            src="{{ computer.data.image }}"
            alt="{{ computer.data.brand }} {{ computer.data.model }}"
            decoding="async"
-         
          />
        </picture>
        {% endif %}
