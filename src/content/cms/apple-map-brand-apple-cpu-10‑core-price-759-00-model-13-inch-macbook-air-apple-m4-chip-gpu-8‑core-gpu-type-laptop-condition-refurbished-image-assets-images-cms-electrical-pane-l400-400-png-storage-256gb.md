@@ -7,6 +7,6 @@ storage: 256GB SSD²
 gpu: 8‑Core GPU
 condition: Refurbished
 type: Laptop
-image: /assets/images/cms/electrical-pane-l400-400.png
+image: /assets/images/cms/macbook.png
 price: "759.00"
 ---
