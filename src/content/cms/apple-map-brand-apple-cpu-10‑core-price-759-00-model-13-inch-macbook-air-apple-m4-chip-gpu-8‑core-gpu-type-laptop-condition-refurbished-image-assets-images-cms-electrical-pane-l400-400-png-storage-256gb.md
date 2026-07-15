@@ -7,6 +7,6 @@ storage: 1T ssd m.2
 gpu: rtx 5060
 condition: Refurbished
 type: Desktop
-image: /assets/images/cms/mac-mini-m4-1024x683.webp
+image: /assets/images/cms/02ypddsebybv2v0cqnemtrh-15.fit_lim.size_1600x900.v1569489520.jpg
 price: "759.00"
 ---
