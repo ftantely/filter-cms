@@ -1,12 +1,12 @@
 ---
 brand: Apple
-model: 13-inch MacBook Air Apple M4 chip
-cpu: 10‑Core
+model: Apple mini
+cpu: 16‑Core
 ram: 16GB unified memory
-storage: 256GB SSD²
-gpu: 8‑Core GPU
+storage: 1T ssd m.2
+gpu: rtx 5060
 condition: Refurbished
-type: Laptop
-image: /assets/images/cms/macbook.png
+type: Desktop
+image: /assets/images/cms/mac-mini-m4-1024x683.webp
 price: "759.00"
 ---
